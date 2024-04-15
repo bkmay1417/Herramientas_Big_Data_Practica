@@ -46,7 +46,57 @@ HBase Zookeeper_Dump: http://<IP_Anfitrion>:16010/zk.jsp
 HBase Region_Server: http://<IP_Anfitrion>:16030
 Zeppelin: http://<IP_Anfitrion>:8888
 Neo4j: http://<IP_Anfitrion>:7474
+```
+Para implementar ejecute las siguientes lineas:
 
 ```
+git clone https://github.com/lopezdar222/herramientas_big_data
+```
+Primero clonamos el repositorio que contiene lo nesesario para trabajar
+```
+cd herramientas_big_data
+```
+ingresamos en el directorio 
+```
+sudo docker-compose -f docker-compose-v1.yml up -d
+```
+levantaremos en el contenedor correspondiente
+<h3> Nota </h3> 
+en el codigo sudo docker-compose -f docker-compose-v1.yml up -d el contenedor tendra que ser ejecutado la version corepodiente al punto que se espesifica en cada punto en caso de tener que usar otro el anterior tiene que ser detenido y el comando vuelto a ser ejecurtar con la version acorde 
+
+<h2> 1) HDFS </h2>
+
+Utilizar el entorno docker-compose-v1.yml
+
+Copiar los archivos ubicados en la carpeta Datasets, dentro del contenedor "namenode"
+```
+sudo docker exec -it namenode bash
+```
+iniciarmos el contenedor
+```
+cd home
+mkdir Datasets
+```
+nos moveremos a home y crearemos el directoio Datasets
+```
+cd Datasets 
+mkdir cliente venta tipodegasto sucursal proveedor producto compra empleado canaldeventa gasto calendario data_nvo
+exit
+```
+Nos debemos posicionar en "Datasets" y crearemos multiples carpetas y luego salimos
+
+a continuacion utilizaremos un shell script llamado Paso00.sh que se encuentra en la carpeta herramientas_big_data clonada previamente
+
+```
+chmod u+x Paso00.sh
+```
+le damos premiso de ejecucion
+
+```
+./Paso00.sh
+```
+ejecutamos
+
+
 
 
