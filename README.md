@@ -1,16 +1,20 @@
 <h1>Herramientas Big Data</h1>
 
 <p align="center">
-    <img src="./img/foto.png" alt="imagen1"  />
+    <img src="./img/foto.png" alt="imagen"  />
 </p>
 
 <h2>Introducción</h2>
 
 Las herramientas Big Data son software diseñado para almacenar, procesar y analizar grandes volúmenes de datos de manera eficiente. Hadoop es un sistema de almacenamiento distribuido que permite procesar datos de forma paralela. Spark es un framework de procesamiento de datos en memoria que acelera el análisis de datos. Hive es una herramienta que facilita el análisis de datos estructurados mediante consultas estilo SQL sobre datos almacenados en Hadoop. Juntas, estas herramientas forman un ecosistema poderoso para gestionar y analizar grandes cantidades de información.
 
+<p align="center"><img src="./img/foto1.png" alt="imagen1"  /></p>
+
 <h2> Nota importante </h2>
 
 En este proyecto se llevó a cabo en un entorno de desarrollo Windows. Se utilizó una máquina virtual alojada en VirtualBox con Ubuntu Server, debido a que Docker no es compatible directamente con Windows. En la máquina virtual se instaló Docker para la gestión de contenedores. Para establecer la conexión entre la máquina virtual y el sistema operativo original de Windows, se empleó PuTTY. Además, para simplificar la transferencia y gestión de archivos en Ubuntu, también se puede optar por utilizar WinSCP.Los links se proveen a continuacion
+
+<p align="center"><img src="./img/foto2.png" alt="imagen2"  /></p>
 
 <h2> Practica Integradora </h2>
 
@@ -42,8 +46,7 @@ HBase Zookeeper_Dump: http://<IP_Anfitrion>:16010/zk.jsp
 HBase Region_Server: http://<IP_Anfitrion>:16030
 Zeppelin: http://<IP_Anfitrion>:8888
 Neo4j: http://<IP_Anfitrion>:7474
-<<<<<<< HEAD
+
 ```
-=======
-```
->>>>>>> 28d4b974ca30fac32d5fc8b7be4fee254bf368b1
+
+
