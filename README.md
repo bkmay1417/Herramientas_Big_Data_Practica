@@ -152,8 +152,8 @@ selec * from cliente limit 5;
 exit; 
 ```
 ejempllo de como revisar 
-## Formatos de Almacenamiento
-<h3>3) Formatos de Almacenamiento</h3>
+
+## 3)Formatos de Almacenamiento
 <p align="center"><img src="./img/comprimir.png" alt="comprimir"  /></p>
 Para este paso se sigue utilizando el entorno docker-compose-v2.yml
 
