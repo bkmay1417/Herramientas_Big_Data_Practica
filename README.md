@@ -1,3 +1,5 @@
-# Practica-integradora
-utilizamos total las herramientas aprendidas en el modulo m4
-tal cual agragale algo
+
+
+<p align="center">
+    <img src="./img/foto1.png" alt="imagen1"  />
+</p>
