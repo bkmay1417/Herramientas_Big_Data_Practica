@@ -95,7 +95,22 @@ le damos premiso de ejecucion
 ```
 ./Paso00.sh
 ```
-ejecutamos
+Ejecutamos
+
+Luego hay que Ubicarse en el contenedor "namenode"
+```
+  sudo docker exec -it namenode bash
+```
+Crear un directorio en HDFS llamado "/data".
+```
+  hdfs dfs -mkdir -p /data
+```
+Copiar los archivos csv provistos a HDFS:
+```
+  hdfs dfs -put /home/Datasets/* /data
+```
+Nota: Busque dfs.blocksize y dfs.replication en http://<IP_Anfitrion>:9870/conf para encontrar los valores de tamaño de bloque y factor de réplica respectivamente entre otras configuraciones del sistema Hadoop.
+
 
 
 
