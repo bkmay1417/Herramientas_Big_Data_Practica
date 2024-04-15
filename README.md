@@ -1,7 +1,7 @@
 <h1>Herramientas Big Data</h1>
 
 ## 📑 menu de prueva
- [HDFS](#hdfs) | [HIVE](#hive) | [Formatos de Almacenamiento](#formatos-de-almacenamiento) | [SQL](#4 SQL))
+ [HDFS](#hdfs) | [HIVE](#hive) | [Formatos de Almacenamiento](#formatos-de-almacenamiento) | [SQL](#4SQL))
 
 <p align="center">
     <img src="./img/foto.png" alt="imagen"  />
@@ -185,7 +185,7 @@ select COUNT(*) from cliente;
 exit; 
 ```
 
-## 4) SQL
+## 4)SQL
 <h3>4) SQL</h3>
 <p align="center"><img src="./img/sql.png" alt="sql"  /></p>
 
