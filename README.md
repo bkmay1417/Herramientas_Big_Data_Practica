@@ -1,10 +1,8 @@
 <h1>Herramientas Big Data</h1>
 
-## menu de prueva
-- [HDFS](#hdfs)
-- [Hive](#hive)
-- [Formatos de Almacenamiento](#formatos-de-almacenamiento)
-- [SQL](#sql)
+## 📑 menu de prueva
+[Hive](#hive) | [HDFS](#hdfs) | [Formatos de Almacenamiento](#formatos-de-almacenamiento) | [SQL](#sql)
+
 <p align="center">
     <img src="./img/foto.png" alt="imagen"  />
 </p>
