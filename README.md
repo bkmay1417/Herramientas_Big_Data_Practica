@@ -187,8 +187,8 @@ select COUNT(*) from cliente;
 exit; 
 ```
 
-<h3>4) SQL</h3>
 ## SQL
+<h3>4) SQL</h3>
 <p align="center"><img src="./img/sql.png" alt="sql"  /></p>
 
  <p>   La mejora en la velocidad de consulta que puede proporcionar un índice tiene el costo del procesamiento adicional para crear el índice y el espacio en disco para almacenar las referencias del índice. Se recomienda que los índices se basen en las columnas que utiliza en las condiciones de filtrado. El índice en la tabla puede degradar su rendimiento en caso de que no los esté utilizando. Crear índices en alguna de las tablas cargadas y probar los resultados:</p>
