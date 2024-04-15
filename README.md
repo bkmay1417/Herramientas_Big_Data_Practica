@@ -69,8 +69,8 @@ levantaremos en el contenedor correspondiente
 <h3> Nota </h3> 
 en el codigo sudo docker-compose -f docker-compose-v1.yml up -d el contenedor tendra que ser ejecutado la version corepodiente al punto que se espesifica en cada punto en caso de tener que usar otro el anterior tiene que ser detenido y el comando vuelto a ser ejecurtar con la version acorde 
 
-<h2> 1) HDFS </h2>
 ## HDFS
+<h2> 1) HDFS </h2>
 <p align="center"><img src="./img/hadoop.png" alt="hadoop"  /></p>
 Utilizar el entorno docker-compose-v1.yml
 
