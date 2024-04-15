@@ -185,7 +185,7 @@ select COUNT(*) from cliente;
 exit; 
 ```
 
-## SQL
+## 4) SQL
 <h3>4) SQL</h3>
 <p align="center"><img src="./img/sql.png" alt="sql"  /></p>
 
