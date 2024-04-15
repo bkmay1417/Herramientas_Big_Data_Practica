@@ -1,12 +1,10 @@
 <h1>Herramientas Big Data</h1>
-# Mi Proyecto
 
-## Tabla de Contenidos
-- [sql](#sql)
-- [Instrucciones de Uso](#instrucciones-de-uso)
-- [Contribución](#contribución)
-- [Licencia](#licencia)
-  
+## menu de prueva
+- [HDFS](#hdfs)
+- [Hive](#hive)
+- [Formatos de Almacenamiento](#formatos-de-almacenamiento)
+- [SQL](#sql)
 <p align="center">
     <img src="./img/foto.png" alt="imagen"  />
 </p>
@@ -72,6 +70,7 @@ levantaremos en el contenedor correspondiente
 en el codigo sudo docker-compose -f docker-compose-v1.yml up -d el contenedor tendra que ser ejecutado la version corepodiente al punto que se espesifica en cada punto en caso de tener que usar otro el anterior tiene que ser detenido y el comando vuelto a ser ejecurtar con la version acorde 
 
 <h2> 1) HDFS </h2>
+## HDFS
 <p align="center"><img src="./img/hadoop.png" alt="hadoop"  /></p>
 Utilizar el entorno docker-compose-v1.yml
 
@@ -118,6 +117,7 @@ Copiar los archivos csv provistos a HDFS:
 ```
 Nota: Busque dfs.blocksize y dfs.replication en http://<IP_Anfitrion>:9870/conf para encontrar los valores de tamaño de bloque y factor de réplica respectivamente entre otras configuraciones del sistema Hadoop.
 
+## Hive
 <h2> 2) Hive </h2>
 <p align="center"><img src="./img/hive.png" alt="hive"  /></p>
 Para este paso se debe utilizar el entorno docker-compose-v2.yml
@@ -155,7 +155,7 @@ selec * from cliente limit 5;
 exit; 
 ```
 ejempllo de como revisar 
-## Contribución
+## Formatos de Almacenamiento
 <h3>3) Formatos de Almacenamiento</h3>
 <p align="center"><img src="./img/comprimir.png" alt="comprimir"  /></p>
 Para este paso se sigue utilizando el entorno docker-compose-v2.yml
@@ -188,7 +188,7 @@ exit;
 ```
 
 <h3>4) SQL</h3>
-##sql
+## SQL
 <p align="center"><img src="./img/sql.png" alt="sql"  /></p>
 
  <p>   La mejora en la velocidad de consulta que puede proporcionar un índice tiene el costo del procesamiento adicional para crear el índice y el espacio en disco para almacenar las referencias del índice. Se recomienda que los índices se basen en las columnas que utiliza en las condiciones de filtrado. El índice en la tabla puede degradar su rendimiento en caso de que no los esté utilizando. Crear índices en alguna de las tablas cargadas y probar los resultados:</p>
