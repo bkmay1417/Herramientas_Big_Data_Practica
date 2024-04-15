@@ -65,7 +65,7 @@ levantaremos en el contenedor correspondiente
 en el codigo sudo docker-compose -f docker-compose-v1.yml up -d el contenedor tendra que ser ejecutado la version corepodiente al punto que se espesifica en cada punto en caso de tener que usar otro el anterior tiene que ser detenido y el comando vuelto a ser ejecurtar con la version acorde 
 
 <h2> 1) HDFS </h2>
-
+<p align="center"><img src="./img/hadoop.png" alt="hadoop"  /></p>
 Utilizar el entorno docker-compose-v1.yml
 
 Copiar los archivos ubicados en la carpeta Datasets, dentro del contenedor "namenode"
@@ -112,6 +112,7 @@ Copiar los archivos csv provistos a HDFS:
 Nota: Busque dfs.blocksize y dfs.replication en http://<IP_Anfitrion>:9870/conf para encontrar los valores de tamaño de bloque y factor de réplica respectivamente entre otras configuraciones del sistema Hadoop.
 
 <h2> 2) Hive </h2>
+<p align="center"><img src="./img/hive.png" alt="hive"  /></p>
 Para este paso se debe utilizar el entorno docker-compose-v2.yml
 
 nota en caso de te tener iniciado el entorno docker-compose-v1.yml ejecutar 
@@ -148,7 +149,7 @@ exit;
 ```
 ejempllo de como revisar 
 <h3>3) Formatos de Almacenamiento</h3>
-
+<p align="center"><img src="./img/comprimir.png" alt="comprimir"  /></p>
 Para este paso se sigue utilizando el entorno docker-compose-v2.yml
 
 Las tablas creadas en el punto 2 a partir de archivos en formato csv, deben ser almacenadas en formato Parquet + Snappy. Tener en cuenta además de aplicar particiones para alguna de las tablas.
@@ -179,7 +180,7 @@ exit;
 ```
 
 4) SQL
-
+<p align="center"><img src="./img/sql.png" alt="sql"  /></p>
    La mejora en la velocidad de consulta que puede proporcionar un índice tiene el costo del procesamiento adicional para crear el índice y el espacio en disco para almacenar las referencias del índice. Se recomienda que los índices se basen en las columnas que utiliza en las condiciones de filtrado. El índice en la tabla puede degradar su rendimiento en caso de que no los esté utilizando. Crear índices en alguna de las tablas cargadas y probar los resultados:
 
 
