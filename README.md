@@ -42,4 +42,8 @@ HBase Zookeeper_Dump: http://<IP_Anfitrion>:16010/zk.jsp
 HBase Region_Server: http://<IP_Anfitrion>:16030
 Zeppelin: http://<IP_Anfitrion>:8888
 Neo4j: http://<IP_Anfitrion>:7474
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> 28d4b974ca30fac32d5fc8b7be4fee254bf368b1
