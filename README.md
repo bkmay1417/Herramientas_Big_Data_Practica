@@ -111,6 +111,77 @@ Copiar los archivos csv provistos a HDFS:
 ```
 Nota: Busque dfs.blocksize y dfs.replication en http://<IP_Anfitrion>:9870/conf para encontrar los valores de tamaño de bloque y factor de réplica respectivamente entre otras configuraciones del sistema Hadoop.
 
+<h2> 2) Hive </h2>
+Para este paso se debe utilizar el entorno docker-compose-v2.yml
+
+nota en caso de te tener iniciado el entorno docker-compose-v1.yml ejecutar 
+```
+sudo docker stop $(sudo docker ps -a -q)
+```
+inciamos el entorno docker-compose-v2.yml
+```
+sudo docker-compose -f docker-compose-v2.yml up -d
+```
+
+Procederemos a crear tablas en Hive, a partir de los csv en HDFS.
+Realizaremos este procedimiento utilizando el paso02.hql
+```
+sudo docker cp ./Paso02.hql hive-server:/opt/
+```
+De esta forma enviamos eln paso02 al server de hive
+
+Ahora iniciaremos en server
+```
+sudo docker exec -it hive-server bash
+```
+Ejecutamos el hql
+```
+hive -f Paso02.hql
+```
+podemos vericar ingresando a hive 
+```
+hive
+use integrador;
+show tables;
+selec * from cliente limit 5;
+exit; 
+```
+ejempllo de como revisar 
+<h3>3) Formatos de Almacenamiento</h3>
+
+Para este paso se sigue utilizando el entorno docker-compose-v2.yml
+
+Las tablas creadas en el punto 2 a partir de archivos en formato csv, deben ser almacenadas en formato Parquet + Snappy. Tener en cuenta además de aplicar particiones para alguna de las tablas.
+
+utilizaremos el paso03.hql para la creacion de una nueva basedatos, comprecion y particion de la tabla gasto 
+```
+sudo docker cp ./Paso03.hql hive-server:/opt/
+```
+De esta forma enviamos el paso03 al server de hive
+
+Ahora iniciaremos en server
+```
+sudo docker exec -it hive-server bash
+```
+Ejecutamos el hql
+```
+hive -f Paso03.hql
+```
+
+podemos vericar ingresando a hive 
+```
+hive
+use integrador;
+show tables;
+selec * from cliente limit 5;
+select COUNT(*) from cliente;
+exit; 
+```
+
+4) SQL
+
+   La mejora en la velocidad de consulta que puede proporcionar un índice tiene el costo del procesamiento adicional para crear el índice y el espacio en disco para almacenar las referencias del índice. Se recomienda que los índices se basen en las columnas que utiliza en las condiciones de filtrado. El índice en la tabla puede degradar su rendimiento en caso de que no los esté utilizando. Crear índices en alguna de las tablas cargadas y probar los resultados:
+
 
 
 
