@@ -63,6 +63,7 @@ ingresamos en el directorio
 ```
 sudo docker-compose -f docker-compose-v1.yml up -d
 ```
+en este paso puede que te pidan la contraseña para su ejecucion 
 levantaremos en el contenedor correspondiente
 <h3> Nota </h3> 
 en el codigo sudo docker-compose -f docker-compose-v1.yml up -d el contenedor tendra que ser ejecutado la version corepodiente al punto que se espesifica en cada punto en caso de tener que usar otro el anterior tiene que ser detenido y el comando vuelto a ser ejecurtar con la version acorde 
