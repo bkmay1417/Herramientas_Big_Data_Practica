@@ -151,10 +151,16 @@ hive -f Paso02.hql
 podemos vericar ingresando a hive 
 ```
 hive
+```
+```
 use integrador;
 show tables;
-selec * from cliente limit 5;
+select * from cliente limit 5;
 exit; 
+```
+si todo funciona correctamente salimos 
+```
+exit
 ```
 ejempllo de como revisar 
 
@@ -182,11 +188,17 @@ hive -f Paso03.hql
 podemos vericar ingresando a hive 
 ```
 hive
-use integrador;
+```
+```
+use integrador2;
 show tables;
-selec * from cliente limit 5;
+select * from cliente limit 5;
 select COUNT(*) from cliente;
+select * from gasto limit 5;
 exit; 
+```
+```
+exit
 ```
 
 ## 4)SQL
