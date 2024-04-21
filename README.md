@@ -272,17 +272,23 @@ podemos vericar ingresando a hive
 ```
 hive
 ```
+ejempllo de como revisar 
 ```
 use integrador;
 show tables;
 select * from cliente limit 5;
 exit; 
 ```
+
+<p><img src="./img/hive3.png" alt="hive3"  /></p>
+
+<p><img src="./img/hive4.png" alt="hive4"  /></p>
+
 si todo funciona correctamente salimos 
 ```
 exit
 ```
-ejempllo de como revisar 
+
 
 ## 3)Formatos de Almacenamiento
 <p align="center"><img src="./img/comprimir.png" alt="comprimir"  /></p>
@@ -317,6 +323,13 @@ select COUNT(*) from cliente;
 select * from gasto limit 5;
 exit; 
 ```
+
+<p><img src="./img/Parquet1.png" alt="Parquet1"  /></p>
+
+<p><img src="./img/Parquet0.png" alt="Parquet0"  /></p>
+
+<p><img src="./img/Parquet2.png" alt="Parquet2"  /></p>
+
 ```
 exit
 ```
