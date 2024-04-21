@@ -17,6 +17,38 @@ Las herramientas Big Data son software diseñado para almacenar, procesar y anal
 
 En este proyecto se llevó a cabo en un entorno de desarrollo Windows. Se utilizó una máquina virtual alojada en VirtualBox con Ubuntu Server, debido a que Docker no es compatible directamente con Windows. En la máquina virtual se instaló Docker para la gestión de contenedores. Para establecer la conexión entre la máquina virtual y el sistema operativo original de Windows, se empleó PuTTY. Además, para simplificar la transferencia y gestión de archivos en Ubuntu, también se puede optar por utilizar WinSCP.Los links se proveen a continuacion
 
+Paso 0.1 descargarmos el virtual disk de ubuntu server
+```
+https://drive.google.com/file/d/1EsDIcfz-MVvPwOSmUb-x5FE612puBZnF/view
+```
+Paso 0.2 descagamos el virtual box e instalamos
+```
+https://www.virtualbox.org/wiki/Downloads
+```
+<p align="center"><img src="./img/Virtualbox0.png alt="virtualbox0"  /></p>
+
+Creamos una nueva maquina virtual
+<p align="center"><img src="./img/Virtualbox1.png alt="virtualbox1"  /></p>
+La llamamos ubuntu
+<p align="center"><img src="./img/Virtualbox2.png alt="virtualbox2"  /></p>
+Nos dirigimos a hard disk y ponemos utilizar un hard disk existente
+<p align="center"><img src="./img/Virtualbox3.png alt="virtualbox3"  /></p>
+Elegimos el hardisk anteriormente descargado y finalizar
+<p align="center"><img src="./img/Virtualbox4.png alt="virtualbox4"  /></p>
+luego configuramos los puestos de red
+<p align="center"><img src="./img/Virtualbox5.png alt="virtualbox5"  /></p>
+en el primer adaptador pones puente y en avanzado permitir todo
+<p align="center"><img src="./img/Virtualbox6.png alt="virtualbox6"  /></p>
+en el segundo colocamos solo anfitriony en avanzado permitir todo y guardamos 
+<p align="center"><img src="./img/Virtualbox7.png alt="virtualbox7"  /></p>
+
+```
+https://www.putty.org/
+```
+```
+https://winscp.net/eng/download.php
+```
+
 <p align="center"><img src="./img/foto2.png" alt="imagen2"  /></p>
 
 <h2> Practica Integradora </h2>
