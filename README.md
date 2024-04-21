@@ -95,7 +95,7 @@ https://winscp.net/eng/download.php
 
 <p><img src="./img/winscp0.png" alt="winscp0"  /></p>
 
-programa que nos permite editar y enviar archivos de una forma mas comoda se conecta igual que el putty con el ip de la maquina virtual
+Paso 0.17 Programa que nos permite editar y enviar archivos de una forma mas comoda se conecta igual que el putty con el ip de la maquina virtual
 
 <p><img src="./img/winscp.png" alt="winscp"  /></p>
 
@@ -134,30 +134,33 @@ HBase Region_Server: http://<IP_Anfitrion>:16030
 Zeppelin: http://<IP_Anfitrion>:8888
 Neo4j: http://<IP_Anfitrion>:7474
 ```
-Para implementar ejecute las siguientes lineas:
+Paso 0.18 Para implementar ejecute las siguientes lineas:
 
 ```
 git clone https://github.com/lopezdar222/herramientas_big_data
 ```
-Primero clonamos el repositorio que contiene lo nesesario para trabajar
+Paso 0.19 Primero clonamos el repositorio que contiene lo nesesario para trabajar
 ```
 cd herramientas_big_data
 ```
-ingresamos en el directorio 
+Paso 0.20 ingresamos en el directorio 
 ```
 sudo docker-compose -f docker-compose-v1.yml up -d
 ```
-en este paso puede que te pidan la contraseña para su ejecucion 
-levantaremos en el contenedor correspondiente
+> En este paso puede que te pidan la contraseña para su ejecucion 
+
+> Levantaremos en el contenedor correspondiente
+
 <h3> Nota </h3> 
 en el codigo sudo docker-compose -f docker-compose-v1.yml up -d el contenedor tendra que ser ejecutado la version corepodiente al punto que se espesifica en cada punto en caso de tener que usar otro el anterior tiene que ser detenido y el comando vuelto a ser ejecurtar con la version acorde 
 
 ## 1)HDFS
 
 <p align="center"><img src="./img/hadoop.png" alt="hadoop"  /></p>
-Utilizar el entorno docker-compose-v1.yml
 
-Copiar los archivos ubicados en la carpeta Datasets, dentro del contenedor "namenode"
+>  Utilizar el entorno docker-compose-v1.yml
+
+Paso 1.01 Copiar los archivos ubicados en la carpeta Datasets, dentro del contenedor "namenode"
 ```
 sudo docker exec -it namenode bash
 ```
