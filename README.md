@@ -138,6 +138,9 @@ Paso 0.18 Para implementar ejecute las siguientes lineas:
 ```
 git clone https://github.com/lopezdar222/herramientas_big_data
 ```
+
+<p><img src="./img/HDFS.png" alt="HDFS"  /></p>
+
 Paso 0.19 Primero clonamos el repositorio que contiene lo nesesario para trabajar
 ```
 cd herramientas_big_data
@@ -146,6 +149,9 @@ Paso 0.20 ingresamos en el directorio
 ```
 sudo docker-compose -f docker-compose-v1.yml up -d
 ```
+
+<p><img src="./img/HDFS1.png" alt="HDFS1"  /></p>
+
 > En este paso puede que te pidan la contraseña para su ejecucion 
 
 > Levantaremos en el contenedor correspondiente
@@ -204,8 +210,30 @@ Despues salimos del contenedor
 ```
 exit
 ```
-Nota: Busque dfs.blocksize y dfs.replication en http://<IP_Anfitrion>:9870/conf para encontrar los valores de tamaño de bloque y factor de réplica respectivamente entre otras configuraciones del sistema Hadoop.
+Para verificar si se ejecuto correctamente podemos entrar al hdfs namenoda mediante
+```
+http://<IP_Anfitrion>:9870
+```
+Una vez adentro nos dirigimos a utilities/Browse the los archivos debe estar la carpeta data con los archivos
+<p><img src="./img/HDFS2.png" alt="HDFS2"  /></p>
 
+En el browse los archivos debe estar la carpeta data con los archivos
+
+<p><img src="./img/HDFS3.png" alt="HDFS3"  /></p>
+
+Dentro de data deberia verse asi
+
+<p><img src="./img/HDFS3.1.png" alt="HDFS3.1"  /></p>
+
+Nota: Busque dfs.blocksize y dfs.replication en  para encontrar los valores de tamaño de bloque y factor de réplica respectivamente entre otras configuraciones del sistema Hadoop.
+
+```
+http://<IP_Anfitrion>:9870/conf
+```
+
+<p><img src="./img/HDFS4.png" alt="HDFS4"  /></p>
+
+<p><img src="./img/HDFS5.png" alt="HDFS5"  /></p>
 ## 2)Hive
 <p align="center"><img src="./img/hive.png" alt="hive"  /></p>
 Para este paso se debe utilizar el entorno docker-compose-v2.yml
