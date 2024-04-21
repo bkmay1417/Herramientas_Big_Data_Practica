@@ -136,14 +136,14 @@ Neo4j: http://<IP_Anfitrion>:7474
 Paso 0.18 Para implementar ejecute las siguientes lineas:
 
 ```
-git clone https://github.com/lopezdar222/herramientas_big_data
+git clone https://github.com/bkmay1417/Herramientas_Big_Data_Practica.git
 ```
 
 <p><img src="./img/HDFS.png" alt="HDFS" width="75%"  /></p>
 
 Paso 0.19 Primero clonamos el repositorio que contiene lo nesesario para trabajar
 ```
-cd herramientas_big_data
+cd Herramientas_Big_Data_Practica
 ```
 Paso 0.20 ingresamos en el directorio 
 ```
