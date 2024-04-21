@@ -20,49 +20,49 @@ Paso 0.01 Descargarmos y descomprimimos el virtual disk de ubuntu server (2.15 g
 ```
 https://drive.google.com/file/d/1EsDIcfz-MVvPwOSmUb-x5FE612puBZnF/view
 ```
-<p><img src="./img/imangenlink.png" alt="imangenlink"  /></p>
+<p><img src="./img/imangenlink.png" alt="imangenlink" width="75%" height="75%" /></p>
 
 Paso 0.02 Descagamos el virtual box e instalamos
 ```
 https://www.virtualbox.org/wiki/Downloads
 ```
-<p><img src="./img/Virtualbox0.1.png" alt="virtualbox0.1"  /></p>
+<p><img src="./img/Virtualbox0.1.png" alt="virtualbox0.1" width="75%" /></p>
 
 Paso 0.03 Creamos una nueva maquina virtual
 
-<p align="center"><img src="./img/Virtualbox0.png" alt="virtualbox0"  /></p>
+<p><img src="./img/Virtualbox0.png" alt="virtualbox0" width="75%" /></p>
 
 Paso 0.04 La llamamos ubuntu
 
-<p><img src="./img/Virtualbox1.png" alt="virtualbox1"  /></p>
+<p><img src="./img/Virtualbox1.png" alt="virtualbox1"    /></p>
 
 Paso 0.05 Nos dirigimos a hard disk y ponemos utilizar un hard disk existente
 
-<p><img src="./img/Virtualbox2.png" alt="virtualbox2"  /></p>
+<p><img src="./img/Virtualbox2.png" alt="virtualbox2"   /></p>
 
 Paso 0.06 Elegimos el hardisk anteriormente descargado y finalizar
 
-<p><img src="./img/Virtualbox3.png" alt="virtualbox3"  /></p>
+<p><img src="./img/Virtualbox3.png" alt="virtualbox3" width="75%"  /></p>
 
 Paso 0.07 Luego configuramos los puestos de red
 
-<p><img src="./img/Virtualbox4.png" alt="virtualbox4"  /></p>
+<p><img src="./img/Virtualbox4.png" alt="virtualbox4" /></p>
 
 Paso 0.08 En el primer adaptador pones adaptador puente y en avanzado permitir todo
 
-<p><img src="./img/Virtualbox5.png" alt="virtualbox5"  /></p>
+<p><img src="./img/Virtualbox5.png" alt="virtualbox5"   /></p>
 
 Paso 0.09 En el segundo colocamos solo anfitrion y en avanzado permitir todo y guardamos 
 
-<p><img src="./img/Virtualbox6.png" alt="virtualbox6"  /></p>
+<p><img src="./img/Virtualbox6.png" alt="virtualbox6" height="63%" width="63%"  /></p>
 
 Paso 0.10 Iniciamos la maquina virtual 
 
-<p><img src="./img/Virtualbox6.1.png" alt="virtualbox6.1"  /></p>
+<p><img src="./img/Virtualbox6.1.png" alt="virtualbox6.1" width="75%"  /></p>
 
 Paso 0.11 esperamos un poco y ingresamos el usuario  y comtraseña  (por defecto viene ubuntu de usuario y ubuntu de contraseña)
 
-<p><img src="./img/Virtualbox7.png" alt="virtualbox7"  /></p>
+<p><img src="./img/Virtualbox7.png" alt="virtualbox7" width="75%"  /></p>
 
 Paso 0.12 A continuacion obtenemos el ip de la maquina virtual
 
@@ -70,33 +70,33 @@ Paso 0.12 A continuacion obtenemos el ip de la maquina virtual
 hostname -I
 ```
 
-<p><img src="./img/Virtualbox8.png" alt="virtualbox8"  /></p>
+<p><img src="./img/Virtualbox8.png" alt="virtualbox8" width="75%"  /></p>
 
 Paso 0.13 Descargamos e instalamos el putty
 ```
 https://www.putty.org/
 ```
 
-<p><img src="./img/putty.png" alt="putty0"  /></p>
+<p><img src="./img/putty.png" alt="putty0"  width="75%" /></p>
 
 Paso 0.14 Iniciamos el putty con la ip usuario y comtraseña de la maquina virtual
 
-<p><img src="./img/putyy1.png" alt="putty1"  /></p>
+<p><img src="./img/putyy1.png" alt="putty1"   /></p>
 
 Paso 0.15 Despues ingresamos el usuario y contraseña
 
-<p><img src="./img/putty2.png" alt="putty2"  /></p>
+<p><img src="./img/putty2.png" alt="putty2" height="63%" width="63%" /></p>
 
 Paso 0.16 Opcional descargar e instalar winscp 
 ```
 https://winscp.net/eng/download.php
 ```
 
-<p><img src="./img/winscp0.png" alt="winscp0"  /></p>
+<p><img src="./img/winscp0.png" alt="winscp0" width="75%"  /></p>
 
 Paso 0.17 Programa que nos permite editar y enviar archivos de una forma mas comoda se conecta igual que el putty con el ip de la maquina virtual
 
-<p><img src="./img/winscp.png" alt="winscp"  /></p>
+<p><img src="./img/winscp.png" alt="winscp" width="75%"  /></p>
 
 
 
@@ -139,7 +139,7 @@ Paso 0.18 Para implementar ejecute las siguientes lineas:
 git clone https://github.com/lopezdar222/herramientas_big_data
 ```
 
-<p><img src="./img/HDFS.png" alt="HDFS"  /></p>
+<p><img src="./img/HDFS.png" alt="HDFS" width="75%"  /></p>
 
 Paso 0.19 Primero clonamos el repositorio que contiene lo nesesario para trabajar
 ```
@@ -150,7 +150,7 @@ Paso 0.20 ingresamos en el directorio
 sudo docker-compose -f docker-compose-v1.yml up -d
 ```
 
-<p><img src="./img/HDFS1.png" alt="HDFS1"  /></p>
+<p><img src="./img/HDFS1.png" alt="HDFS1"  width="75%" /></p>
 
 > En este paso puede que te pidan la contraseña para su ejecucion 
 
@@ -161,7 +161,7 @@ en el codigo sudo docker-compose -f docker-compose-v1.yml up -d el contenedor te
 
 ## 1)HDFS
 
-<p align="center"><img src="./img/hadoop.png" alt="hadoop"  /></p>
+<p align="center"><img src="./img/hadoop.png" alt="hadoop" /></p>
 
 >  Utilizar el entorno docker-compose-v1.yml
 
@@ -215,33 +215,39 @@ Para verificar si se ejecuto correctamente podemos entrar al hdfs namenoda media
 http://<IP_Anfitrion>:9870
 ```
 Una vez adentro nos dirigimos a utilities/Browse the los archivos debe estar la carpeta data con los archivos
-<p><img src="./img/HDFS2.png" alt="HDFS2"  /></p>
+<p><img src="./img/HDFS2.png" alt="HDFS2" width="75%"  /></p>
 
 En el browse los archivos debe estar la carpeta data con los archivos
 
-<p><img src="./img/HDFS3.png" alt="HDFS3"  /></p>
+<p><img src="./img/HDFS3.png" alt="HDFS3" width="75%"  /></p>
 
 Dentro de data deberia verse asi
 
-<p><img src="./img/HDFS3.1.png" alt="HDFS3.1"  /></p>
+<p><img src="./img/HDFS3.1.png" alt="HDFS3.1"  width="75%" /></p>
 
-Nota: Busque dfs.blocksize y dfs.replication en  para encontrar los valores de tamaño de bloque y factor de réplica respectivamente entre otras configuraciones del sistema Hadoop.
+>  Nota: Busque dfs.blocksize y dfs.replication en  para encontrar los valores de tamaño de bloque y factor de réplica respectivamente entre otras configuraciones del sistema Hadoop.
 
 ```
 http://<IP_Anfitrion>:9870/conf
 ```
+> Recomiendo buscarlo con ctrl + f en el navegar 
 
-<p><img src="./img/HDFS4.png" alt="HDFS4"  /></p>
+<p><img src="./img/HDFS4.png" alt="HDFS4"   /></p>
 
 <p><img src="./img/HDFS5.png" alt="HDFS5"  /></p>
 ## 2)Hive
-<p align="center"><img src="./img/hive.png" alt="hive"  /></p>
+<p align="center"><img src="./img/hive.png" alt="hive"   /></p>
 Para este paso se debe utilizar el entorno docker-compose-v2.yml
 
 nota en caso de te tener iniciado el entorno docker-compose-v1.yml ejecutar 
 ```
 sudo docker stop $(sudo docker ps -a -q)
 ```
+
+
+
+<p><img src="./img/hive0.png" alt="hive0" width="75%"  /></p>
+
 inciamos el entorno docker-compose-v2.yml
 ```
 sudo docker-compose -f docker-compose-v2.yml up -d
