@@ -13,45 +13,97 @@ Las herramientas Big Data son software diseñado para almacenar, procesar y anal
 
 <p align="center"><img src="./img/foto1.png" alt="imagen1"  /></p>
 
-<h2> Nota importante </h2>
+<h2>Pre-requisitos</h2>
 
 En este proyecto se llevó a cabo en un entorno de desarrollo Windows. Se utilizó una máquina virtual alojada en VirtualBox con Ubuntu Server, debido a que Docker no es compatible directamente con Windows. En la máquina virtual se instaló Docker para la gestión de contenedores. Para establecer la conexión entre la máquina virtual y el sistema operativo original de Windows, se empleó PuTTY. Además, para simplificar la transferencia y gestión de archivos en Ubuntu, también se puede optar por utilizar WinSCP.Los links se proveen a continuacion
 
-Paso 0.1 descargarmos el virtual disk de ubuntu server
+Paso 0.01 Descargarmos y descomprimimos el virtual disk de ubuntu server (2.15 gb)
 ```
 https://drive.google.com/file/d/1EsDIcfz-MVvPwOSmUb-x5FE612puBZnF/view
 ```
-Paso 0.2 descagamos el virtual box e instalamos
+<p><img src="./img/imangenlink.png" alt="imangenlink"  /></p>
+
+Paso 0.02 Descagamos el virtual box e instalamos
 ```
 https://www.virtualbox.org/wiki/Downloads
 ```
-<p align="center"><img src="./img/Virtualbox0.png alt="virtualbox0"  /></p>
+<p><img src="./img/Virtualbox0.1.png" alt="virtualbox0.1"  /></p>
 
-Creamos una nueva maquina virtual
-<p align="center"><img src="./img/Virtualbox1.png alt="virtualbox1"  /></p>
-La llamamos ubuntu
-<p align="center"><img src="./img/Virtualbox2.png alt="virtualbox2"  /></p>
-Nos dirigimos a hard disk y ponemos utilizar un hard disk existente
-<p align="center"><img src="./img/Virtualbox3.png alt="virtualbox3"  /></p>
-Elegimos el hardisk anteriormente descargado y finalizar
-<p align="center"><img src="./img/Virtualbox4.png alt="virtualbox4"  /></p>
-luego configuramos los puestos de red
-<p align="center"><img src="./img/Virtualbox5.png alt="virtualbox5"  /></p>
-en el primer adaptador pones puente y en avanzado permitir todo
-<p align="center"><img src="./img/Virtualbox6.png alt="virtualbox6"  /></p>
-en el segundo colocamos solo anfitriony en avanzado permitir todo y guardamos 
-<p align="center"><img src="./img/Virtualbox7.png alt="virtualbox7"  /></p>
+Paso 0.03 Creamos una nueva maquina virtual
 
+<p align="center"><img src="./img/Virtualbox0.png" alt="virtualbox0"  /></p>
+
+Paso 0.04 La llamamos ubuntu
+
+<p><img src="./img/Virtualbox1.png" alt="virtualbox1"  /></p>
+
+Paso 0.05 Nos dirigimos a hard disk y ponemos utilizar un hard disk existente
+
+<p><img src="./img/Virtualbox2.png" alt="virtualbox2"  /></p>
+
+Paso 0.06 Elegimos el hardisk anteriormente descargado y finalizar
+
+<p><img src="./img/Virtualbox3.png" alt="virtualbox3"  /></p>
+
+Paso 0.07 Luego configuramos los puestos de red
+
+<p><img src="./img/Virtualbox4.png" alt="virtualbox4"  /></p>
+
+Paso 0.08 En el primer adaptador pones adaptador puente y en avanzado permitir todo
+
+<p><img src="./img/Virtualbox5.png" alt="virtualbox5"  /></p>
+
+Paso 0.09 En el segundo colocamos solo anfitrion y en avanzado permitir todo y guardamos 
+
+<p><img src="./img/Virtualbox6.png" alt="virtualbox6"  /></p>
+
+Paso 0.10 Iniciamos la maquina virtual 
+
+<p><img src="./img/Virtualbox6.1.png" alt="virtualbox6.1"  /></p>
+
+Paso 0.11 esperamos un poco y ingresamos el usuario  y comtraseña  (por defecto viene ubuntu de usuario y ubuntu de contraseña)
+
+<p><img src="./img/Virtualbox7.png" alt="virtualbox7"  /></p>
+
+Paso 0.12 A continuacion obtenemos el ip de la maquina virtual
+
+```
+hostname -I
+```
+
+<p><img src="./img/Virtualbox8.png" alt="virtualbox8"  /></p>
+
+Paso 0.13 Descargamos e instalamos el putty
 ```
 https://www.putty.org/
 ```
+
+<p><img src="./img/putty.png" alt="putty0"  /></p>
+
+Paso 0.14 Iniciamos el putty con la ip usuario y comtraseña de la maquina virtual
+
+<p><img src="./img/putyy1.png" alt="putty1"  /></p>
+
+Paso 0.15 Despues ingresamos el usuario y contraseña
+
+<p><img src="./img/putty2.png" alt="putty2"  /></p>
+
+Paso 0.16 Opcional descargar e instalar winscp 
 ```
 https://winscp.net/eng/download.php
 ```
 
-<p align="center"><img src="./img/foto2.png" alt="imagen2"  /></p>
+<p><img src="./img/winscp0.png" alt="winscp0"  /></p>
+
+programa que nos permite editar y enviar archivos de una forma mas comoda se conecta igual que el putty con el ip de la maquina virtual
+
+<p><img src="./img/winscp.png" alt="winscp"  /></p>
+
+
 
 <h2> Practica Integradora </h2>
+
+<p align="center"><img src="./img/foto2.png" alt="imagen2"  /></p>
 
 Durante esta practica la idea es emular un ambiente de trabajo, desde un área de innovación solicitan construir un MVP(Producto viable mínimo) de un ambiente de Big Data donde se deban cargar unos archivos CSV que anteriormente se utilizaban en un datawarehouse en MySQl, pero ahora en un entorno de Hadoop.
 Desde la gerencia de Infraestructura no están muy convencidos de utilizar esta tecnología por lo que no se asigno presupuesto alguna para esta iniciativa, de forma tal que por el momento no es posible utilizar un Vendor(Azure, AWS, Google) para implementar dicho entorno, es por esto que todo el MVP se deberá implementar utilizando Docker de forma tal que se pueda hacer una demo al sector de infraestructura mostrando las ventajas de utilizar tecnologías de Big Data.
