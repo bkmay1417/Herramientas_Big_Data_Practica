@@ -1,4 +1,14 @@
 <h1> 📑Herramientas Big Data</h1>
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/bkmay1417/Herramientas_Big_Data_Practica) 
+/
+Herramientas_Big_Data_Practica
+
+<h1> 📑 Herramientas Big Data </h1>
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/bkmay1417/Herramientas_Big_Data_Practica) 
+![GitHub contributors](https://img.shields.io/github/contributors/bkmay1417/Herramientas_Big_Data_Practica) 
+
+Este es el [enlace](https://github.com/bkmay1417/Herramientas_Big_Data_Practica) a tu repositorio.
+
 
  [HDFS](#1hdfs) | [HIVE](#2hive) | [Formatos de Almacenamiento](#3formatos-de-almacenamiento) | [SQL](#4SQL)
 
