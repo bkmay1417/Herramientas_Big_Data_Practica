@@ -235,6 +235,7 @@ http://<IP_Anfitrion>:9870/conf
 <p><img src="./img/HDFS4.png" alt="HDFS4"   /></p>
 
 <p><img src="./img/HDFS5.png" alt="HDFS5"  /></p>
+
 ## 2)Hive
 <p align="center"><img src="./img/hive.png" alt="hive"   /></p>
 Para este paso se debe utilizar el entorno docker-compose-v2.yml
