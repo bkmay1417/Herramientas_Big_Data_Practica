@@ -64,7 +64,7 @@ Paso 0.09 En el segundo colocamos solo anfitrion y en avanzado permitir todo y g
 Paso 0.10 Iniciamos la maquina virtual 
 
 > [!CAUTION]
-> Este paso fallara si se tiene la virtualizacion de windows desacivada .
+> Este paso fallara si se tiene la virtualizacion de windows desactivada .
 > En este [video](https://www.youtube.com/watch?v=Tl4kODRGtIc&ab_channel=LuisOvalle)  explican como revisar si esta activa y en caso de no estarlo como activarlo 
 
 <p><img src="./img/Virtualbox6.1.png" alt="virtualbox6.1" width="75%"  /></p>
