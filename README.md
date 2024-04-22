@@ -15,13 +15,13 @@ Este es el [enlace](https://github.com/bkmay1417/Herramientas_Big_Data_Practica)
     <img src="./img/foto.png" alt="imagen"  />
 </p>
 
-<h2>Introducción</h2>
+<h2>📖 Introducción</h2>
 
 Las herramientas Big Data son software diseñado para almacenar, procesar y analizar grandes volúmenes de datos de manera eficiente. Hadoop es un sistema de almacenamiento distribuido que permite procesar datos de forma paralela. Spark es un framework de procesamiento de datos en memoria que acelera el análisis de datos. Hive es una herramienta que facilita el análisis de datos estructurados mediante consultas estilo SQL sobre datos almacenados en Hadoop. Juntas, estas herramientas forman un ecosistema poderoso para gestionar y analizar grandes cantidades de información.
 
 <p align="center"><img src="./img/foto1.png" alt="imagen1"  /></p>
 
-<h2>Pre-requisitos</h2>
+<h2>Pre-requisitos 📋</h2>
 
 En este proyecto se llevó a cabo en un entorno de desarrollo Windows. Se utilizó una máquina virtual alojada en VirtualBox con Ubuntu Server, debido a que Docker no es compatible directamente con Windows. En la máquina virtual se instaló Docker para la gestión de contenedores. Para establecer la conexión entre la máquina virtual y el sistema operativo original de Windows, se empleó PuTTY. Además, para simplificar la transferencia y gestión de archivos en Ubuntu, también se puede optar por utilizar WinSCP.Los links se proveen a continuacion
 
@@ -67,6 +67,10 @@ Paso 0.09 En el segundo colocamos solo anfitrion y en avanzado permitir todo y g
 
 Paso 0.10 Iniciamos la maquina virtual 
 
+> [!CAUTION]
+> Este paso fallara si se tiene la virtualizacion de windows desacivada .
+> En este [video](https://www.youtube.com/watch?v=Tl4kODRGtIc&ab_channel=LuisOvalle)  explican como revisar si esta activa y en caso de no estarlo como activarlo 
+
 <p><img src="./img/Virtualbox6.1.png" alt="virtualbox6.1" width="75%"  /></p>
 
 Paso 0.11 esperamos un poco y ingresamos el usuario  y comtraseña  (por defecto viene ubuntu de usuario y ubuntu de contraseña)
@@ -109,7 +113,7 @@ Paso 0.17 Programa que nos permite editar y enviar archivos de una forma mas com
 
 
 
-<h2> Practica Integradora </h2>
+<h2> 🔗Practica Integradora </h2>
 
 <p align="center"><img src="./img/foto2.png" alt="imagen2"  /></p>
 
@@ -165,8 +169,8 @@ sudo docker-compose -f docker-compose-v1.yml up -d
 
 > Levantaremos en el contenedor correspondiente
 
-<h3> Nota </h3> 
-en el codigo sudo docker-compose -f docker-compose-v1.yml up -d el contenedor tendra que ser ejecutado la version corepodiente al punto que se espesifica en cada punto en caso de tener que usar otro el anterior tiene que ser detenido y el comando vuelto a ser ejecurtar con la version acorde 
+> [!NOTE]
+> en el codigo sudo docker-compose -f docker-compose-v1.yml up -d el contenedor tendra que ser ejecutado la version corepodiente al punto que se espesifica en cada punto en caso de tener que usar otro el anterior tiene que ser detenido y el comando vuelto a ser ejecurtar con la version acorde 
 
 ## 1)HDFS
 
@@ -234,11 +238,13 @@ Dentro de data deberia verse asi
 
 <p><img src="./img/HDFS3.1.png" alt="HDFS3.1"  width="75%" /></p>
 
->  Nota: Busque dfs.blocksize y dfs.replication en  para encontrar los valores de tamaño de bloque y factor de réplica respectivamente entre otras configuraciones del sistema Hadoop.
+> [!IMPORTANT]
+>  Busque dfs.blocksize y dfs.replication en  para encontrar los valores de tamaño de bloque y factor de réplica respectivamente entre otras configuraciones del sistema Hadoop.
 
 ```
 http://<IP_Anfitrion>:9870/conf
 ```
+> [!TIP]
 > Recomiendo buscarlo con ctrl + f en el navegar 
 
 <p><img src="./img/HDFS4.png" alt="HDFS4"   /></p>
@@ -350,6 +356,23 @@ exit
  <p>   La mejora en la velocidad de consulta que puede proporcionar un índice tiene el costo del procesamiento adicional para crear el índice y el espacio en disco para almacenar las referencias del índice. Se recomienda que los índices se basen en las columnas que utiliza en las condiciones de filtrado. El índice en la tabla puede degradar su rendimiento en caso de que no los esté utilizando. Crear índices en alguna de las tablas cargadas y probar los resultados:</p>
 
 
+<h4 align="center">
+:construction: En construcion  :construction:
+</h4>
+
+### ⚠️ Advertencia: Este tema está en fase de desarrollo y prueba ⚠️
+
+### 🛠️ ¡Preparándose para el lanzamiento! Tema en desarrollo y prueba 🛠️
+
+### 💡 Proyecto en etapa de desarrollo y prueba 💡
+
+> [!WARNING]
+> apartir de este punto se puede preentar errores aum en desarrollo y prueva.
+
+## Desarrolladores
+
+| [<img src="https://avatars.githubusercontent.com/u/163685041?v=4" width=115><br><sub>Michael Martinez</sub>](https://github.com/bkmay1417) |
+| :---: |
 
 
 
