@@ -791,5 +791,7 @@ https://github.com/sercasti/datalaketools
 | [<img src="https://avatars.githubusercontent.com/u/163685041?v=4" width=115><br><sub>Michael Martinez</sub>](https://github.com/bkmay1417) |
 | :---: |
 
+Copyright (c) 2024 [Michael Martinez] yam8991@gmail.com
+
 
 
