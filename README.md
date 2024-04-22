@@ -9,7 +9,7 @@
 Este es el [enlace](https://github.com/bkmay1417/Herramientas_Big_Data_Practica) al repositorio.
 
 
- [HDFS](#1hdfs) | [HIVE](#2hive) | [Formatos de Almacenamiento](#3formatos-de-almacenamiento) | [SQL](#4SQL)   | [No-SQL](#5No-SQL)  
+ [HDFS](#1hdfs) | [HIVE](#2hive) | [Formatos de Almacenamiento](#3formatos-de-almacenamiento) | [SQL](#4SQL)   | [No-SQL](#5No-SQL) | [Spark](#6Spark) | [incremental con Spark](#7Carga)    
 
 <p align="center">
     <img src="./img/foto.png" alt="imagen"  />
@@ -406,6 +406,8 @@ hive> DROP INDEX IF EXISTS index_students ON students;
 
 ## 5)No-SQL
 
+<p align="center"><img src="./img/nosql.png" alt="nosql"  /></p>
+
 Se puede utilizar el entorno docker-compose-v3.yml
 
 #### 1) HBase:
@@ -604,7 +606,9 @@ Instrucciones:
 					neo4j.auth.user	= neo4j
 					neo4j.auth.password	= zeppelin
 
-## 6) Spark
+## 6)Spark
+
+<p align="center"><img src="./img/spark.png" alt="spark"   height="130%" width="130%" /></p>
 
 Se pueden utilizar los entornos docker-compose-v4.yml y docker-compose-kafka.yml
 
@@ -751,7 +755,7 @@ only showing top 20 rows
 
 A partir de la tabla venta generada en Parqet, realizar el proceso de filtrado de valores outliers utilizando Spark.
 
-## 7) Carga incremental con Spark 
+## 7)Carga incremental con Spark 
 
 Ahora resta evaluar qué sucede cuando en los sistemas fuente, se genere más dato, es decir, siguiendo los datos de esta práctica, qué pasa cuando se carguen más ventas. Se debería tomar las novedades e ingestar en el modelo existente cada día, de modo que la tabla venta, irá creciendo en cantidad de registro de manera diaria.
 Para este fin, se provee un script en spark que realiza la generación de nuevas ventas, de manera aleatoria, para poder crear una situación, donde se cuenta con novedades para la tabla de venta. El script "Paso06_GeneracionVentasNuevasPorDia.py" utiliza los datasets provistos en la carpeta "Datasets\data_nvo" para generar las novedades de forma automática. Revisar la variable "fecha_nvo" que contiene la fecha para la que se quiere generar información, como tenemos datos hasta el año 2020, la fecha de ejemplo tomada es '2021-01-01'.
