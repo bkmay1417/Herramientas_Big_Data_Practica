@@ -499,6 +499,7 @@ copiamos iris.json al contenedor de mongo
 
     sudo docker cp iris.json mongodb:/data/iris.json
 
+
 	2)  sudo docker exec -it mongodb bash
 
 	3) 	mongoimport /data/iris.csv --type csv --headerline -d dataprueba -c iris_csv
@@ -528,7 +529,7 @@ copiamos iris.json al contenedor de mongo
 	8) 	hiveserver2
 		chmod 777 iris.hql
 		hive -f iris.hql
-```	
+
 	
 ### 3) Neo4J
 	
@@ -681,6 +682,7 @@ Cargar raw-flight-data.csv desde HDFS.
 	flights = spark.read.csv('hdfs://namenode:9000/data/flights/raw-flight-data.csv', schema=flightSchema, header=True)
   
   	flights.show()
+
 	  +----------+---------+-------+---------------+-------------+--------+--------+
 |DayofMonth|DayOfWeek|Carrier|OriginAirportID|DestAirportID|DepDelay|ArrDelay|
 +----------+---------+-------+---------------+-------------+--------+--------+
@@ -721,7 +723,7 @@ Cargar raw-flight-data.csv desde HDFS.
 	val flights = spark.read.format("csv").option("sep", ",").option("header", "true").load("hdfs://namenode:9000/data/flights/raw-flight-data.csv").as[flightSchema]
 
   	flights.show()
-
+	
 +----------+---------+-------+---------------+-------------+--------+--------+
 |DayofMonth|DayOfWeek|Carrier|OriginAirportID|DestAirportID|DepDelay|ArrDelay|
 +----------+---------+-------+---------------+-------------+--------+--------+
