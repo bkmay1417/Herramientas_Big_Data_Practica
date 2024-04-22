@@ -25,16 +25,12 @@ Las herramientas Big Data son software diseñado para almacenar, procesar y anal
 
 En este proyecto se llevó a cabo en un entorno de desarrollo Windows. Se utilizó una máquina virtual alojada en VirtualBox con Ubuntu Server, debido a que Docker no es compatible directamente con Windows. En la máquina virtual se instaló Docker para la gestión de contenedores. Para establecer la conexión entre la máquina virtual y el sistema operativo original de Windows, se empleó PuTTY. Además, para simplificar la transferencia y gestión de archivos en Ubuntu, también se puede optar por utilizar WinSCP.Los links se proveen a continuacion
 
-Paso 0.01 Descargarmos y descomprimimos el virtual disk de ubuntu server (2.15 gb)
-```
-https://drive.google.com/file/d/1EsDIcfz-MVvPwOSmUb-x5FE612puBZnF/view
-```
+Paso 0.01 Descarga el virtual disk de Ubuntu Server desde el siguiente enlace: [Descargar Ubuntu Server](https://drive.google.com/file/d/1EsDIcfz-MVvPwOSmUb-x5FE612puBZnF/view) (2.15 gb)
+
 <p><img src="./img/imangenlink.png" alt="imangenlink" width="75%" height="75%" /></p>
 
-Paso 0.02 Descagamos el virtual box e instalamos
-```
-https://www.virtualbox.org/wiki/Downloads
-```
+Paso 0.02 Descarga e instala VirtualBox desde: [Descargar VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+
 <p><img src="./img/Virtualbox0.1.png" alt="virtualbox0.1" width="75%" /></p>
 
 Paso 0.03 Creamos una nueva maquina virtual
@@ -85,10 +81,7 @@ hostname -I
 
 <p><img src="./img/Virtualbox8.png" alt="virtualbox8" width="75%"  /></p>
 
-Paso 0.13 Descargamos e instalamos el putty
-```
-https://www.putty.org/
-```
+Paso 0.13 Descargamos e instalamos el putty : [Descargar putty](https://www.putty.org/)
 
 <p><img src="./img/putty.png" alt="putty0"  width="75%" /></p>
 
@@ -100,17 +93,13 @@ Paso 0.15 Despues ingresamos el usuario y contraseña
 
 <p><img src="./img/putty2.png" alt="putty2" height="63%" width="63%" /></p>
 
-Paso 0.16 Opcional descargar e instalar winscp 
-```
-https://winscp.net/eng/download.php
-```
+Paso 0.16 Opcional descargar e instalar winscp : [Descargar putty](https://winscp.net/eng/download.php)
 
 <p><img src="./img/winscp0.png" alt="winscp0" width="75%"  /></p>
 
 Paso 0.17 Programa que nos permite editar y enviar archivos de una forma mas comoda se conecta igual que el putty con el ip de la maquina virtual
 
 <p><img src="./img/winscp.png" alt="winscp" width="75%"  /></p>
-
 
 
 <h2> 🔗Practica Integradora </h2>
@@ -402,7 +391,7 @@ hive> DROP INDEX IF EXISTS index_students ON students;
 ### 💡 Proyecto en etapa de desarrollo y prueba 💡
 
 > [!WARNING]
->⚠️  Apartir de este punto se puede preentar errores aum en está en fase de desarrollo y prueba⚠️
+>⚠️  Apartir de este punto se puede presentar errores aum en está en fase de desarrollo y prueba⚠️
 
 ## 5)No-SQL
 
