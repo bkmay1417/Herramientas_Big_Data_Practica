@@ -244,7 +244,8 @@ http://<IP_Anfitrion>:9870/conf
 <p align="center"><img src="./img/hive.png" alt="hive"   /></p>
 Para este paso se debe utilizar el entorno docker-compose-v2.yml
 
-nota en caso de te tener iniciado el entorno docker-compose-v1.yml ejecutar 
+> [!NOTE]
+> En caso de te tener iniciado el entorno docker-compose-v1.yml ejecutar 
 ```
 sudo docker stop $(sudo docker ps -a -q)
 ```
@@ -397,36 +398,82 @@ hive> DROP INDEX IF EXISTS index_students ON students;
 
 <p align="center"><img src="./img/nosql.png" alt="nosql"  /></p>
 
-Se puede utilizar el entorno docker-compose-v3.yml
+> Se puede utilizar el entorno docker-compose-v3.yml
+
+> [!NOTE]
+> En caso de te tener iniciado el entorno docker-compose-v2.yml ejecutar 
+```
+sudo docker stop $(sudo docker ps -a -q)
+```
+inciamos el entorno docker-compose-v3.yml
+```
+sudo docker-compose -f docker-compose-v3.yml up -d
+```
+
 
 #### 1) HBase:
 
 Instrucciones:
+1-
+-Iniciamos el shell
+
+	sudo docker exec -it hbase-master hbase shell
+
+creamos la tabla
+
+	create 'personal','personal_data'
+
+revisamos la creacion
+
+	list 'personal'
+
+poblamos las tablas
 ```
-	1- sudo docker exec -it hbase-master hbase shell
+put 'personal',1,'personal_data:name','Juan'
+put 'personal',1,'personal_data:city','Córdoba'
+put 'personal',1,'personal_data:age','25'
+put 'personal',2,'personal_data:name','Franco'
+put 'personal',2,'personal_data:city','Lima'
+put 'personal',2,'personal_data:age','32'
+put 'personal',3,'personal_data:name','Ivan'
+put 'personal',3,'personal_data:age','34'
+put 'personal',4,'personal_data:name','Eliecer'
+put 'personal',4,'personal_data:city','Caracas'
+get 'personal','4'
+```
+> [!CAUTION]
+> cuidado con los simbolos especiales debido a la codificacion.
+procemos a verificar la carga
 
-		create 'personal','personal_data'
-		list 'personal'
-		put 'personal',1,'personal_data:name','Juan'
-		put 'personal',1,'personal_data:city','Córdoba'
-		put 'personal',1,'personal_data:age','25'
-		put 'personal',2,'personal_data:name','Franco'
-		put 'personal',2,'personal_data:city','Lima'
-		put 'personal',2,'personal_data:age','32'
-		put 'personal',3,'personal_data:name','Ivan'
-		put 'personal',3,'personal_data:age','34'
-		put 'personal',4,'personal_data:name','Eliecer'
-		put 'personal',4,'personal_data:city','Caracas'
-		get 'personal','4'
+	get 'personal','4'
+ si esta todo correcto salimos
 
-	2-En el namenode del cluster:
+ 	exit
 
-		hdfs dfs -put personal.csv /hbase/data/personal.csv
+-En el namenode del cluster copiamos el archivo personal.csv en la carpeta /data de HDFS:
 
-	3-sudo docker exec -it hbase-master bash
+	hdfs dfs -put personal.csv /hbase/data/personal.csv
+procedemos a salir
+```
+ exit
+```
+iniciamos el hbase
+
+	sudo docker exec -it hbase-master bash
+ cargamos las tablas
 		
     hbase org.apache.hadoop.hbase.mapreduce.ImportTsv -Dimporttsv.separator=',' -Dimporttsv.columns=HBASE_ROW_KEY,personal_data:name,personal_data:city,personal_data:age personal hdfs://namenode:9000/hbase/data/personal.csv
-		hbase shell
+
+ingresamos al shell
+
+	hbase shell
+
+revisamos que se hayan cargado los datos correctamente
+
+	scan 'personal'
+
+carmos los datos
+
 		scan 'personal'
 		create 'album','label','image'
 		put 'album','label1','label:size','10'
@@ -435,14 +482,22 @@ Instrucciones:
 		put 'album','label1','image:name','holiday'
 		put 'album','label1','image:source','/tmp/pic1.jpg'
 		get 'album','label1'
-```		
+
+ verificamos
+
+	get 'album','label1'
 
 #### 2) MongoDB
 
 Instrucciones:
-```
-	1) 	sudo docker cp iris.csv mongodb:/data/iris.csv
-		  sudo docker cp iris.json mongodb:/data/iris.json
+
+copiamos el iris.csv  al contenedor de mongo
+
+	sudo docker cp iris.csv mongodb:/data/iris.csv
+
+copiamos iris.json al contenedor de mongo
+
+    sudo docker cp iris.json mongodb:/data/iris.json
 
 	2)  sudo docker exec -it mongodb bash
 
