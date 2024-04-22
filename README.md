@@ -93,7 +93,7 @@ Paso 0.15 Despues ingresamos el usuario y contraseña
 
 <p><img src="./img/putty2.png" alt="putty2" height="63%" width="63%" /></p>
 
-Paso 0.16 Opcional descargar e instalar winscp : [Descargar putty](https://winscp.net/eng/download.php)
+Paso 0.16 Opcional descargar e instalar winscp : [Descargar winscp](https://winscp.net/eng/download.php)
 
 <p><img src="./img/winscp0.png" alt="winscp0" width="75%"  /></p>
 
@@ -392,7 +392,7 @@ hive> DROP INDEX IF EXISTS index_students ON students;
 ### 💡 Proyecto en etapa de desarrollo y prueba 💡
 
 > [!WARNING]
->⚠️  Apartir de este punto se puede presentar errores aum en está en fase de desarrollo y prueba⚠️
+>⚠️  Apartir de este punto se puede presentar errores aum está en fase de desarrollo y prueba⚠️
 
 ## 5)No-SQL
 
