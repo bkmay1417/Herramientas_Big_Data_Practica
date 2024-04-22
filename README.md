@@ -472,7 +472,7 @@ revisamos que se hayan cargado los datos correctamente
 
 	scan 'personal'
 
-carmos los datos
+cargamos los datos
 
 		scan 'personal'
 		create 'album','label','image'
@@ -499,34 +499,54 @@ copiamos iris.json al contenedor de mongo
 
     sudo docker cp iris.json mongodb:/data/iris.json
 
+ingresamos al mongo
 
-	2)  sudo docker exec -it mongodb bash
+	sudo docker exec -it mongodb bash
+Importamos los archivos
 
-	3) 	mongoimport /data/iris.csv --type csv --headerline -d dataprueba -c iris_csv
-		  mongoimport --db dataprueba --collection iris_json --file /data/iris.json --jsonArray
+	mongoimport /data/iris.csv --type csv --headerline -d dataprueba -c iris_csv
 
-	4) mongosh
-		use dataprueba
-		show collections
-		db.iris_csv.find()
-		db.iris_json.find()
+	mongoimport --db dataprueba --collection iris_json --file /data/iris.json --jsonArray
+entramos a mongosh
+
+	mongosh
+> [!TIP]
+> utilizar .pretty() para visualizar mejor
+ ```
+use dataprueba
+show collections
+db.iris_csv.find()
+db.iris_json.find()
+exit
+```
+exportamos los archivos
+
+	mongoexport --db dataprueba --collection iris_csv --fields sepal_length,sepal_width,petal_length,petal_width,species --type=csv --out /data/iris_export.csv
+
+	mongoexport --db dataprueba --collection iris_json --fields sepal_length,sepal_width,petal_length,petal_width,species --type=json --out /data/iris_export.json
+	exit
+> [!IMPORTANT]
+>Descargar desde https://search.maven.org/search?q=g:org.mongodb.mongo-hadoop los jar:
+>https://search.maven.org/search?q=a:mongo-hadoop-hive
+>https://search.maven.org/search?q=a:mongo-hadoop-spark
+
+copiamos los archivos dentro de la carpeta Mongo en lib de hive
+```
+sudo docker cp mongo-hadoop-hive-2.0.2.jar hive-server:/opt/hive/lib/mongo-hadoop-hive-2.0.2.jar
+sudo docker cp mongo-hadoop-core-2.0.2.jar hive-server:/opt/hive/lib/mongo-hadoop-core-2.0.2.jar
+sudo docker cp mongo-hadoop-spark-2.0.2.jar hive-server:/opt/hive/lib/mongo-hadoop-spark-2.0.2.jar
+sudo docker cp mongo-java-driver-3.12.11.jar hive-server:/opt/hive/lib/mongo-java-driver-3.12.11.jar
+```
+
+7)
+ 
+		sudo docker cp iris.hql hive-server:/opt/iris.hql
 	
-	5) 	mongoexport --db dataprueba --collection iris_csv --fields sepal_length,sepal_width,petal_length,petal_width,species --type=csv --out /data/iris_export.csv
-		mongoexport --db dataprueba --collection iris_json --fields sepal_length,sepal_width,petal_length,petal_width,species --type=json --out /data/iris_export.json
-				
-	6) 	Descargar desde https://search.maven.org/search?q=g:org.mongodb.mongo-hadoop los jar:
-		https://search.maven.org/search?q=a:mongo-hadoop-hive
-		https://search.maven.org/search?q=a:mongo-hadoop-spark
-		
-		sudo docker cp mongo-hadoop-hive-2.0.2.jar hive-server:/opt/hive/lib/mongo-hadoop-hive-2.0.2.jar
-		sudo docker cp mongo-hadoop-core-2.0.2.jar hive-server:/opt/hive/lib/mongo-hadoop-core-2.0.2.jar
-		sudo docker cp mongo-hadoop-spark-2.0.2.jar hive-server:/opt/hive/lib/mongo-hadoop-spark-2.0.2.jar
-		sudo docker cp mongo-java-driver-3.12.11.jar hive-server:/opt/hive/lib/mongo-java-driver-3.12.11.jar
-		
-	7) 	sudo docker cp iris.hql hive-server:/opt/iris.hql
-		sudo docker exec -it hive-server bash
+ 		sudo docker exec -it hive-server bash
 
-	8) 	hiveserver2
+8)
+
+    		hiveserver2
 		chmod 777 iris.hql
 		hive -f iris.hql
 
