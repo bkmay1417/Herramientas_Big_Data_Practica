@@ -489,6 +489,7 @@ cargamos los datos
 	get 'album','label1'
 
 #### 2) MongoDB
+<p align="center"><img src="./img/mongodb.png" alt="mongodb"  /></p>
 
 Instrucciones:
 
