@@ -412,6 +412,7 @@ sudo docker-compose -f docker-compose-v3.yml up -d
 
 
 #### 1) HBase:
+<p align="center"><img src="./img/hbase.png" alt="hbase"  /></p>
 
 Instrucciones:
 1-
