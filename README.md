@@ -554,6 +554,7 @@ sudo docker cp mongo-java-driver-3.12.11.jar hive-server:/opt/hive/lib/mongo-jav
 
 	
 ### 3) Neo4J
+<p align="center"><img src="./img/neo4j.png" alt="neo4j" height="130%" width="130%"/></p>
 	
 	Ejemplo de búsqueda del camino más corto:
 		https://neo4j.com/docs/graph-data-science/current/algorithms/dijkstra-source-target/
