@@ -656,6 +656,8 @@ sudo docker cp mongo-java-driver-3.12.11.jar hive-server:/opt/hive/lib/mongo-jav
 
 #### 4) Zeppelin
 
+<p align="center"><img src="./img/zeppelin.png" alt="zeppelin" height="100%" width="100%"/></p>
+
 		HDFS:
 		En la máquina anfitrión probar WebHDFS:
 			curl "http://<IP_Anfitrion>:9870/webhdfs/v1/?op=LISTSTATUS"
