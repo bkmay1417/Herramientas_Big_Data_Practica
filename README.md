@@ -776,7 +776,10 @@ Cargar raw-flight-data.csv desde HDFS.
 only showing top 20 rows
 ```
 
-#### 2) Kafka		
+#### 2) Kafka	
+
+<p align="center"><img src="./img/kafka.png" alt="kafka" height="100%" width="100%"/></p>
+
 ```		
 			sudo docker-compose up -d
 			sudo docker exec -it kafka_container bash
