@@ -680,9 +680,21 @@ sudo docker cp mongo-java-driver-3.12.11.jar hive-server:/opt/hive/lib/mongo-jav
 
 <p align="center"><img src="./img/spark.png" alt="spark"   height="130%" width="130%" /></p>
 
-Se pueden utilizar los entornos docker-compose-v4.yml y docker-compose-kafka.yml
+> [!CAUTION]
+> En caso de te tener iniciado el entorno docker-compose-v3.yml ejecutar 
+
+	sudo docker stop $(sudo docker ps -a -q)
+
+> [!NOTE]
+> Se debe utilizar los entornos docker-compose-v4.yml y docker-compose-kafka.yml
+
+	sudo docker-compose -f docker-compose-v4.yml up -d
+ 
+ 	sudo docker-compose -f docker-compose-kafka.yml up -d
 
 ### 1) Spark y Scala:
+
+<p align="center"><img src="./img/scala.png" alt="scala"  height="130%" width="130%" /></p>
 
 Ubicarse en la línea de comandos del Spark master y comenzar PySpark.
 ```
