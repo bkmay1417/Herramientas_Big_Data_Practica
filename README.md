@@ -297,6 +297,7 @@ exit
 ```
 
 <p align="right">(<a href="#readme-top">Volver al principio</a>)</p>
+
 ## 3)Formatos de Almacenamiento
 <p align="center"><img src="./img/comprimir.png" alt="comprimir"  /></p>
 Para este paso se sigue utilizando el entorno docker-compose-v2.yml
@@ -341,6 +342,7 @@ exit;
 exit
 ```
 <p align="right">(<a href="#readme-top">Volver al principio</a>)</p>
+
 ## 4)SQL
 <p align="center"><img src="./img/sql.png" alt="sql"  /></p>
 
@@ -394,7 +396,9 @@ hive> DROP INDEX IF EXISTS index_students ON students;
 
 > [!WARNING]
 >⚠️  Apartir de este punto se puede presentar errores aum está en fase de desarrollo y prueba⚠️
+
 <p align="right">(<a href="#readme-top">Volver al principio</a>)</p>
+
 ## 5)No-SQL
 
 <p align="center"><img src="./img/nosql.png" alt="nosql"  /></p>
@@ -676,7 +680,9 @@ sudo docker cp mongo-java-driver-3.12.11.jar hive-server:/opt/hive/lib/mongo-jav
 					neo4J.url = http://<IP_Anfitrion>:7687
 					neo4j.auth.user	= neo4j
 					neo4j.auth.password	= zeppelin
+     
 <p align="right">(<a href="#readme-top">Volver al principio</a>)</p>
+
 ## 6)Spark
 
 <p align="center"><img src="./img/spark.png" alt="spark"   height="130%" width="130%" /></p>
@@ -864,6 +870,7 @@ Con crontab, para que ejecute cada día a las 5 AM:
 	$ crontab -l
 ```	
 <p align="right">(<a href="#readme-top">Volver al principio</a>)</p>
+
 ## 8) Herramientas de orquestación de flujos de datos
 
 https://github.com/sercasti/datalaketools
