@@ -240,7 +240,9 @@ http://<IP_Anfitrion>:9870/conf
 <p><img src="./img/HDFS4.png" alt="HDFS4"   /></p>
 
 <p><img src="./img/HDFS5.png" alt="HDFS5"  /></p>
+
 <p align="right">(<a href="#readme-top">Volver al principio</a>)</p>
+
 ## 2)Hive
 <p align="center"><img src="./img/hive.png" alt="hive"   /></p>
 Para este paso se debe utilizar el entorno docker-compose-v2.yml
@@ -847,7 +849,9 @@ only showing top 20 rows
 #### 4) ETL con Spark
 
 A partir de la tabla venta generada en Parqet, realizar el proceso de filtrado de valores outliers utilizando Spark.
+
 <p align="right">(<a href="#readme-top">Volver al principio</a>)</p>
+
 ## 7)Carga incremental con Spark 
 
 Ahora resta evaluar qué sucede cuando en los sistemas fuente, se genere más dato, es decir, siguiendo los datos de esta práctica, qué pasa cuando se carguen más ventas. Se debería tomar las novedades e ingestar en el modelo existente cada día, de modo que la tabla venta, irá creciendo en cantidad de registro de manera diaria.
