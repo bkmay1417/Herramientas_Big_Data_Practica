@@ -7,7 +7,7 @@
 
 
 Este es el [enlace](https://github.com/bkmay1417/Herramientas_Big_Data_Practica) al repositorio.
-
+<p id="readme-top"></p>
 
  [HDFS](#1hdfs) | [HIVE](#2hive) | [Formatos de Almacenamiento](#3formatos-de-almacenamiento) | [SQL](#4SQL)   | [No-SQL](#5No-SQL) | [Spark](#6Spark) | [incremental con Spark](#7Carga-incremental-con-Spark)   
 
@@ -101,6 +101,7 @@ Paso 0.17 Programa que nos permite editar y enviar archivos de una forma mas com
 
 <p><img src="./img/winscp.png" alt="winscp" width="75%"  /></p>
 
+<p align="right">(<a href="#readme-top">Volver al principio</a>)</p>
 
 <h2> 🔗Practica Integradora </h2>
 
@@ -239,7 +240,7 @@ http://<IP_Anfitrion>:9870/conf
 <p><img src="./img/HDFS4.png" alt="HDFS4"   /></p>
 
 <p><img src="./img/HDFS5.png" alt="HDFS5"  /></p>
-
+<p align="right">(<a href="#readme-top">Volver al principio</a>)</p>
 ## 2)Hive
 <p align="center"><img src="./img/hive.png" alt="hive"   /></p>
 Para este paso se debe utilizar el entorno docker-compose-v2.yml
@@ -295,7 +296,7 @@ si todo funciona correctamente salimos
 exit
 ```
 
-
+<p align="right">(<a href="#readme-top">Volver al principio</a>)</p>
 ## 3)Formatos de Almacenamiento
 <p align="center"><img src="./img/comprimir.png" alt="comprimir"  /></p>
 Para este paso se sigue utilizando el entorno docker-compose-v2.yml
@@ -339,7 +340,7 @@ exit;
 ```
 exit
 ```
-
+<p align="right">(<a href="#readme-top">Volver al principio</a>)</p>
 ## 4)SQL
 <p align="center"><img src="./img/sql.png" alt="sql"  /></p>
 
@@ -393,7 +394,7 @@ hive> DROP INDEX IF EXISTS index_students ON students;
 
 > [!WARNING]
 >⚠️  Apartir de este punto se puede presentar errores aum está en fase de desarrollo y prueba⚠️
-
+<p align="right">(<a href="#readme-top">Volver al principio</a>)</p>
 ## 5)No-SQL
 
 <p align="center"><img src="./img/nosql.png" alt="nosql"  /></p>
@@ -675,7 +676,7 @@ sudo docker cp mongo-java-driver-3.12.11.jar hive-server:/opt/hive/lib/mongo-jav
 					neo4J.url = http://<IP_Anfitrion>:7687
 					neo4j.auth.user	= neo4j
 					neo4j.auth.password	= zeppelin
-
+<p align="right">(<a href="#readme-top">Volver al principio</a>)</p>
 ## 6)Spark
 
 <p align="center"><img src="./img/spark.png" alt="spark"   height="130%" width="130%" /></p>
@@ -840,7 +841,7 @@ only showing top 20 rows
 #### 4) ETL con Spark
 
 A partir de la tabla venta generada en Parqet, realizar el proceso de filtrado de valores outliers utilizando Spark.
-
+<p align="right">(<a href="#readme-top">Volver al principio</a>)</p>
 ## 7)Carga incremental con Spark 
 
 Ahora resta evaluar qué sucede cuando en los sistemas fuente, se genere más dato, es decir, siguiendo los datos de esta práctica, qué pasa cuando se carguen más ventas. Se debería tomar las novedades e ingestar en el modelo existente cada día, de modo que la tabla venta, irá creciendo en cantidad de registro de manera diaria.
@@ -862,7 +863,7 @@ Con crontab, para que ejecute cada día a las 5 AM:
 
 	$ crontab -l
 ```	
-
+<p align="right">(<a href="#readme-top">Volver al principio</a>)</p>
 ## 8) Herramientas de orquestación de flujos de datos
 
 https://github.com/sercasti/datalaketools
