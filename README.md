@@ -835,6 +835,8 @@ only showing top 20 rows
 
 #### 3) Comparativa Dataset y Dataframe en Scala:
 
+<p align="center"><img src="./img/Dataset.png" alt="Dataset" height="125%" width="125%" /></p>
+
 ```	
     sudo docker cp pruebaPySpark.py spark-master:pruebaPySpark.py
     sudo docker cp pruebaScala.scala spark-master:pruebaScala.scala
