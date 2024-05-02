@@ -852,6 +852,8 @@ only showing top 20 rows
 
 #### 4) ETL con Spark
 
+<p align="center"><img src="./img/etl.png" alt="etl"  height="125%" width="125%" /></p>
+
 A partir de la tabla venta generada en Parqet, realizar el proceso de filtrado de valores outliers utilizando Spark.
 
 <p align="right">(<a href="#readme-top">Volver al principio</a>)</p>
