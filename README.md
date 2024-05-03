@@ -691,7 +691,7 @@ sudo docker cp mongo-java-driver-3.12.11.jar hive-server:/opt/hive/lib/mongo-jav
 
 ## 6)Spark
 
-<details><summary>No-SQL</summary><ul> <li><a href="#1Spark y Scala">Spark y Scala</a></li><li><a href="#2Kafka">Kafka</a></li><li><a href="#3Comparativa Dataset y Dataframe en Scala">Comparativa Dataset y Dataframe en Scala</a></li><li><a href="#4ETL con Spark">ETL con Spark</a></li></ul></details> 
+<details><summary>Spark</summary><ul> <li><a href="#1Spark">Spark y Scala</a></li><li><a href="#2Kafka">Kafka</a></li><li><a href="#3Comparativa Dataset y Dataframe en Scala">Comparativa Dataset y Dataframe en Scala</a></li><li><a href="#4ETL con Spark">ETL con Spark</a></li></ul></details> 
 
 <p align="center"><img src="./img/spark.png" alt="spark"   height="130%" width="130%" /></p>
 
