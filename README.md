@@ -405,7 +405,7 @@ hive> DROP INDEX IF EXISTS index_students ON students;
 
 ## 5)No-SQL
 
-<details><summary>No-SQL</summary><ul> <li><a href="#1HBase">HBase</a></li><li><a href="#2MongoDB">MongoDB</a></li><li><a href="#3Neo4J">Neo4J</a></li><li><a href="#4Zeppelin">Zeppelin</a></li></ul></details> 4Zeppelin
+<details><summary>No-SQL</summary><ul> <li><a href="#1HBase">HBase</a></li><li><a href="#2MongoDB">MongoDB</a></li><li><a href="#3Neo4J">Neo4J</a></li><li><a href="#4Zeppelin">Zeppelin</a></li></ul></details> 
 
 <p align="center"><img src="./img/nosql.png" alt="nosql"  /></p>
 
@@ -665,7 +665,7 @@ sudo docker cp mongo-java-driver-3.12.11.jar hive-server:/opt/hive/lib/mongo-jav
 		Ver Archivo "ejemploNeo4J.txt"		
 ```	
 
-#### 4) Zeppelin
+#### 4)Zeppelin
 
 <p align="center"><img src="./img/zeppelin.png" alt="zeppelin" height="100%" width="100%"/></p>
 
@@ -691,6 +691,8 @@ sudo docker cp mongo-java-driver-3.12.11.jar hive-server:/opt/hive/lib/mongo-jav
 
 ## 6)Spark
 
+<details><summary>No-SQL</summary><ul> <li><a href="#1Spark y Scala">Spark y Scala</a></li><li><a href="#2Kafka">Kafka</a></li><li><a href="#3Comparativa Dataset y Dataframe en Scala">Comparativa Dataset y Dataframe en Scala</a></li><li><a href="#4ETL con Spark">ETL con Spark</a></li></ul></details> 
+
 <p align="center"><img src="./img/spark.png" alt="spark"   height="130%" width="130%" /></p>
 
 > [!CAUTION]
@@ -705,7 +707,7 @@ sudo docker cp mongo-java-driver-3.12.11.jar hive-server:/opt/hive/lib/mongo-jav
  
  	sudo docker-compose -f docker-compose-kafka.yml up -d
 
-### 1) Spark y Scala:
+### 1)Spark y Scala:
 
 <p align="center"><img src="./img/scala.png" alt="scala"  height="130%" width="130%" /></p>
 
@@ -801,7 +803,7 @@ Cargar raw-flight-data.csv desde HDFS.
 only showing top 20 rows
 ```
 
-#### 2) Kafka	
+#### 2)Kafka	
 
 <p align="center"><img src="./img/kafka.png" alt="kafka" height="100%" width="100%"/></p>
 
@@ -835,7 +837,7 @@ only showing top 20 rows
 			docker-compose exec kafka kafka-console-consumer.sh --bootstrap-server kafka:9092 --topic TenMinPsgCnts --from-beginning
 ```	
 
-#### 3) Comparativa Dataset y Dataframe en Scala:
+#### 3)Comparativa Dataset y Dataframe en Scala:
 
 <p align="center"><img src="./img/Dataset.png" alt="Dataset" height="125%" width="125%" /></p>
 
@@ -852,7 +854,7 @@ only showing top 20 rows
 		/spark/bin/spark-shell --master spark://spark-master:7077
 ```	
 
-#### 4) ETL con Spark
+#### 4)ETL con Spark
 
 <p align="center"><img src="./img/etl.png" alt="etl"  height="125%" width="125%" /></p>
 
