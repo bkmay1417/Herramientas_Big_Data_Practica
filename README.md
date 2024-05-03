@@ -405,6 +405,8 @@ hive> DROP INDEX IF EXISTS index_students ON students;
 
 ## 5)No-SQL
 
+<details><summary>No-SQL</summary><ul><li>[HBase](#1HBase)</li><li>[MongoDB](#2MongoDB)</li><li>[Neo4J](#3Neo4J)</li></ul></details> 
+
 <p align="center"><img src="./img/nosql.png" alt="nosql"  /></p>
 
 > Se puede utilizar el entorno docker-compose-v3.yml
@@ -420,7 +422,7 @@ sudo docker-compose -f docker-compose-v3.yml up -d
 ```
 
 
-#### 1) HBase:
+#### 1)HBase:
 <p align="center"><img src="./img/hbase.png" alt="hbase"  /></p>
 
 Instrucciones:
@@ -497,7 +499,7 @@ cargamos los datos
 
 	get 'album','label1'
 
-#### 2) MongoDB
+#### 2)MongoDB
 <p align="center"><img src="./img/mongodb.png" alt="mongodb"  /></p>
 
 Instrucciones:
@@ -562,7 +564,7 @@ sudo docker cp mongo-java-driver-3.12.11.jar hive-server:/opt/hive/lib/mongo-jav
 		hive -f iris.hql
 
 	
-### 3) Neo4J
+### 3)Neo4J
 <p align="center"><img src="./img/neo4j.png" alt="neo4j" height="130%" width="130%"/></p>
 	
 	Ejemplo de búsqueda del camino más corto:
