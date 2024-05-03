@@ -405,7 +405,7 @@ hive> DROP INDEX IF EXISTS index_students ON students;
 
 ## 5)No-SQL
 
-<details><summary>No-SQL</summary><ul>  <li><a href="#1HBase">HBase</a></li><li><a href="#2MongoDB">MongoDB</a></li><li><a href="#3Neo4J">Neo4J</a></li></ul></details> 
+<details><summary>No-SQL</summary><ul> <li><a href="#1HBase">HBase</a></li><li><a href="#2MongoDB">MongoDB</a></li><li><a href="#3Neo4J">Neo4J</a></li><li><a href="#4Zeppelin">Zeppelin</a></li></ul></details> 4Zeppelin
 
 <p align="center"><img src="./img/nosql.png" alt="nosql"  /></p>
 
