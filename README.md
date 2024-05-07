@@ -9,7 +9,7 @@
 Este es el [enlace](https://github.com/bkmay1417/Herramientas_Big_Data_Practica) al repositorio.
 <p id="readme-top"></p>
 
- [HDFS](#1hdfs) | [HIVE](#2hive) | [Formatos de Almacenamiento](#3formatos-de-almacenamiento) | [SQL](#4SQL)   | [No-SQL](#5No-SQL) | [Spark](#6Spark) | [incremental con Spark](#7Carga-incremental-con-Spark)   
+[Pre-requisitos](#Pre-requisitos) | [Practica Integradora](#Practica-Integradora) |[HDFS](#1hdfs) | [HIVE](#2hive) | [Formatos de Almacenamiento](#3formatos-de-almacenamiento) | [SQL](#4SQL)   | [No-SQL](#5No-SQL) | [Spark](#6Spark) | [incremental con Spark](#7Carga-incremental-con-Spark)   
 
 <p align="center">
     <img src="./img/foto.png" alt="imagen"  />
@@ -21,7 +21,7 @@ Las herramientas Big Data son software diseñado para almacenar, procesar y anal
 
 <p align="center"><img src="./img/foto1.png" alt="imagen1"  /></p>
 
-<h2>Pre-requisitos 📋</h2>
+## Pre-requisitos 📋
 
 En este proyecto se llevó a cabo en un entorno de desarrollo Windows. Se utilizó una máquina virtual alojada en VirtualBox con Ubuntu Server, debido a que Docker no es compatible directamente con Windows. En la máquina virtual se instaló Docker para la gestión de contenedores. Para establecer la conexión entre la máquina virtual y el sistema operativo original de Windows, se empleó PuTTY. Además, para simplificar la transferencia y gestión de archivos en Ubuntu, también se puede optar por utilizar WinSCP.Los links se proveen a continuacion
 
@@ -103,7 +103,7 @@ hostname -I
 
 <p align="right">(<a href="#readme-top">Volver al principio</a>)</p>
 
-<h2> 🔗Practica Integradora </h2>
+## 🔗Practica Integradora
 
 <p align="center"><img src="./img/foto2.png" alt="imagen2"  /></p>
 
