@@ -170,63 +170,61 @@ sudo docker-compose -f docker-compose-v1.yml up -d
 
 >  Utilizar el entorno docker-compose-v1.yml
 
-- **Paso 1.01:**  Copiar los archivos ubicados en la carpeta Datasets, dentro del contenedor "namenode"
+- **Paso 1.01:**  Copiar los archivos ubicados en la carpeta Datasets, dentro del contenedor "namenode" primero iniciarmos el contenedor
 ```
 sudo docker exec -it namenode bash
 ```
-iniciarmos el contenedor
+- **Paso 1.02:** Nos moveremos a home y crearemos el directoio Datasets
 ```
 cd home
 mkdir Datasets
 ```
-nos moveremos a home y crearemos el directoio Datasets
+- **Paso 1.03:** Nos debemos posicionar en "Datasets" y crearemos multiples carpetas y luego salimos
 ```
 cd Datasets 
 mkdir cliente venta tipodegasto sucursal proveedor producto compra empleado canaldeventa gasto calendario data_nvo
 exit
 ```
-Nos debemos posicionar en "Datasets" y crearemos multiples carpetas y luego salimos
-
-a continuacion utilizaremos un shell script llamado Paso00.sh que se encuentra en la carpeta herramientas_big_data clonada previamente
+- **Paso 1.04:** A continuacion utilizaremos un shell script llamado Paso00.sh que se encuentra en la carpeta herramientas_big_data clonada previamente primero le damos premiso de ejecucion
 
 ```
 chmod u+x Paso00.sh
 ```
-le damos premiso de ejecucion
+- **Paso 1.05:** Ejecutamos
 
 ```
 ./Paso00.sh
 ```
-Ejecutamos
 
-Luego hay que Ubicarse en el contenedor "namenode"
+- **Paso 1.06:** Luego hay que Ubicarse en el contenedor "namenode"
+
 ```
   sudo docker exec -it namenode bash
 ```
-Crear un directorio en HDFS llamado "/data".
+- **Paso 1.07:** Crear un directorio en HDFS llamado "/data".
 ```
   hdfs dfs -mkdir -p /data
 ```
-Copiar los archivos csv provistos a HDFS:
+- **Paso 1.08:** Copiar los archivos csv provistos a HDFS:
 ```
   hdfs dfs -put /home/Datasets/* /data
 ```
-Despues salimos del contenedor
+- **Paso 1.09:** Despues salimos del contenedor
 ```
 exit
 ```
-Para verificar si se ejecuto correctamente podemos entrar al hdfs namenoda mediante
+- **Paso 1.10:** Para verificar si se ejecuto correctamente podemos entrar al hdfs namenoda mediante
 ```
 http://<IP_Anfitrion>:9870
 ```
-Una vez adentro nos dirigimos a utilities/Browse the los archivos debe estar la carpeta data con los archivos
+- **Paso 1.11:** Una vez adentro nos dirigimos a utilities/Browse the los archivos debe estar la carpeta data con los archivos
 <p><img src="./img/HDFS2.png" alt="HDFS2" width="75%"  /></p>
 
-En el browse los archivos debe estar la carpeta data con los archivos
+- **Paso 1.12:** En el browse los archivos debe estar la carpeta data con los archivos
 
 <p><img src="./img/HDFS3.png" alt="HDFS3" width="75%"  /></p>
 
-Dentro de data deberia verse asi
+- **Paso 1.12:** Dentro de data deberia verse asi
 
 <p><img src="./img/HDFS3.1.png" alt="HDFS3.1"  width="75%" /></p>
 
@@ -247,43 +245,41 @@ http://<IP_Anfitrion>:9870/conf
 
 ## 2)Hive
 <p align="center"><img src="./img/hive.png" alt="hive"   /></p>
-Para este paso se debe utilizar el entorno docker-compose-v2.yml
 
 > [!NOTE]
+> Para este paso se debe utilizar el entorno docker-compose-v2.yml
+
+> [!CAUTION]
 > En caso de te tener iniciado el entorno docker-compose-v1.yml ejecutar 
 ```
 sudo docker stop $(sudo docker ps -a -q)
 ```
 
-
-
 <p><img src="./img/hive0.png" alt="hive0" width="75%"  /></p>
 
-inciamos el entorno docker-compose-v2.yml
+**Paso 2.00:** Inciamos el entorno docker-compose-v2.yml
 ```
 sudo docker-compose -f docker-compose-v2.yml up -d
 ```
 
-Procederemos a crear tablas en Hive, a partir de los csv en HDFS.
-Realizaremos este procedimiento utilizando el paso02.hql
+**Paso 2.01:** Procederemos a crear tablas en Hive a partir de los archivos CSV en HDFS.Utilizando el script paso02.hql y lo enviaremos al servidor de Hive.
 ```
 sudo docker cp ./Paso02.hql hive-server:/opt/
 ```
-De esta forma enviamos eln paso02 al server de hive
 
-Ahora iniciaremos en server
+**Paso 2.02:** Ahora iniciaremos en server
 ```
 sudo docker exec -it hive-server bash
 ```
-Ejecutamos el hql
+**Paso 2.03:** Ejecutamos el hql
 ```
 hive -f Paso02.hql
 ```
-podemos vericar ingresando a hive 
+**Paso 2.04:** Podemos vericar ingresando a hive 
 ```
 hive
 ```
-ejempllo de como revisar 
+**Paso 2.05:** Ejempllo de como revisar 
 ```
 use integrador;
 show tables;
@@ -295,7 +291,7 @@ exit;
 
 <p><img src="./img/hive4.png" alt="hive4"  /></p>
 
-si todo funciona correctamente salimos 
+**Paso 2.06:** Si todo funciona correctamente salimos 
 ```
 exit
 ```
@@ -303,30 +299,33 @@ exit
 <p align="right">(<a href="#readme-top">Volver al principio</a>)</p>
 
 ## 3)Formatos de Almacenamiento
+
 <p align="center"><img src="./img/comprimir.png" alt="comprimir"  /></p>
-Para este paso se sigue utilizando el entorno docker-compose-v2.yml
 
-Las tablas creadas en el punto 2 a partir de archivos en formato csv, deben ser almacenadas en formato Parquet + Snappy. Tener en cuenta además de aplicar particiones para alguna de las tablas.
+Las tablas creadas en el punto 2 a partir de archivos en formato CSV deben ser almacenadas en formato Parquet + Snappy. Además, debemos aplicar particiones para alguna de las tablas.Utilizaremos el script paso03.hql para la creación de una nueva base de datos, la compresión y la partición de la tabla "gasto".
 
-utilizaremos el paso03.hql para la creacion de una nueva basedatos, comprecion y particion de la tabla gasto 
+> [!NOTE]
+>Para este paso se sigue utilizando el entorno docker-compose-v2.yml
+
+**Paso 3.00:** enviaremos el archivo paso03 al servidor de Hive mediante el siguiente comando:
+
 ```
 sudo docker cp ./Paso03.hql hive-server:/opt/
 ```
-De esta forma enviamos el paso03 al server de hive
 
-Ahora iniciaremos en server
+**Paso 3.01:** Ahora iniciaremos en server
 ```
 sudo docker exec -it hive-server bash
 ```
-Ejecutamos el hql
+**Paso 3.02:**  Ejecutamos el hql
 ```
 hive -f Paso03.hql
 ```
-
-podemos vericar ingresando a hive 
+**Paso 3.03:** Podemos vericar ingresando a hive 
 ```
 hive
 ```
+**Paso 3.04:** Luego de ingresar algunos ejemplos de como probar y cual deberia ser los resultados
 ```
 use integrador2;
 show tables;
@@ -341,6 +340,8 @@ exit;
 <p><img src="./img/Parquet0.png" alt="Parquet0"  /></p>
 
 <p><img src="./img/Parquet2.png" alt="Parquet2"  /></p>
+
+**Paso 3.05:** Salimos 
 
 ```
 exit
