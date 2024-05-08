@@ -9,7 +9,7 @@
 Este es el [enlace](https://github.com/bkmay1417/Herramientas_Big_Data_Practica) al repositorio.
 <p id="readme-top"></p>
 
-[Pre-requisitos](#Pre-requisitos) | [Practica Integradora](#Practica-Integradora) |[HDFS](#1hdfs) | [HIVE](#2hive) | [Formatos de Almacenamiento](#3formatos-de-almacenamiento) | [SQL](#4SQL)   | [No-SQL](#5No-SQL) | [Spark](#6Spark) | [incremental con Spark](#7Carga-incremental-con-Spark)   
+[Pre-requisitos](#Pre-requisitos) | [Inicio](#Practica-Integradora) |[HDFS](#1hdfs) | [HIVE](#2hive) | [Formatos](#3formatos-de-almacenamiento) | [SQL](#4SQL) | [No-SQL](#5No-SQL) | [Spark](#6Spark) | [Carga incremental](#7Carga-incremental-con-Spark)   
 
 <p align="center">
     <img src="./img/foto.png" alt="imagen"  />
