@@ -12,7 +12,8 @@ Este es el [enlace](https://github.com/bkmay1417/Herramientas_Big_Data_Practica)
 [Pre-requisitos](#Pre-requisitos) | [Inicio](#Practica-Integradora) |[HDFS](#1hdfs) | [HIVE](#2hive) | [Formatos](#3formatos-de-almacenamiento) | [SQL](#4SQL) | [No-SQL](#5No-SQL) | [Spark](#6Spark) | [Carga incremental](#7Carga-incremental-con-Spark)   
 
 <p align="center">
-    <img src="./img/foto.png" alt="imagen"  />
+	<img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/80728820-e06b-4f96-9c9e-9df46f0cc0a5" width="1200">
+<br><br>
 </p>
 
 <h2>📖 Introducción</h2>
@@ -893,7 +894,12 @@ Con crontab, para que ejecute cada día a las 5 AM:
 
 https://github.com/sercasti/datalaketools
 
+![graficos](img/Animation-graficos.gif?raw=true)
+
 # Referencias
+
+<img src="https://user-images.githubusercontent.com/74038190/212750672-2f3f2b50-c84f-4ed8-a60a-849ae69ff9df.gif" width="500">
+<br><br>
 
 * https://github.com/soyHenry/DS-M4-Herramientas_Big_Data
 
