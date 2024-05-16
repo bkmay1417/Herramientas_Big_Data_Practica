@@ -897,6 +897,9 @@ https://github.com/sercasti/datalaketools
 
 * https://github.com/soyHenry/DS-M4-Herramientas_Big_Data
 
+## Gracias por llegar hasta aqui
+
+![gracias](img/Animation-gracias.gif?raw=true)
 
 ## Desarrolladores
 
