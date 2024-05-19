@@ -1,6 +1,6 @@
 # Documentación del Esquema y Configuración de la Base de Datos integrador
 
-<p><img src="./img/documentacionp2.png" alt="documentacionp2" height="125%" width="125%" /></p>
+<p><img src="../img/documentacionp2.png" alt="documentacionp2" height="125%" width="125%" /></p>
 
 ### Introducción
 
