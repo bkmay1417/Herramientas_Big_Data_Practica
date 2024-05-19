@@ -276,6 +276,7 @@ sudo docker exec -it hive-server bash
 ```
 hive -f Paso02.hql
 ```
+>Puede revisar la documentacion de Paso02.hql en el siguente enlace - [documentecion Paso02.hql](./documentacion/Paso02.md)
 **Paso 2.04:** Podemos vericar ingresando a hive 
 ```
 hive
