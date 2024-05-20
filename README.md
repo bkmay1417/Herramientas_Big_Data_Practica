@@ -153,6 +153,8 @@ cd Herramientas_Big_Data_Practica
 ```
 sudo docker-compose -f docker-compose-v1.yml up -d
 ```
+>[!NOTE]
+>Puede revisar la documentacion de Paso02.hql en el siguente enlace - [Documentecion del Docker-compose-v1.yml](./documentacion/docker-compose-v1.md)
 
 <p><img src="./img/HDFS1.png" alt="HDFS1"  width="75%" /></p>
 
