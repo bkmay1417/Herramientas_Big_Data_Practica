@@ -13,15 +13,6 @@ Antes de comenzar, asegúrate de tener instalados los siguientes programas en tu
 ### Paso 1: Crear el Archivo docker-compose-v1.yml
 Crea un archivo llamado docker-compose-v1.yml en tu directorio de trabajo. El contenido del archivo debe ser el siguiente:
 
-hadoop_namenode: Almacena los metadatos del NameNode.
-hadoop_datasets: Almacena los datasets de Hadoop.
-hadoop_datanode: Almacena los datos del DataNode.
-hadoop_historyserver: Almacena los datos del HistoryServer.
-
-### Conclusión
-Este archivo docker-compose-v1.yml permite desplegar rápidamente un clúster de Hadoop con Docker, facilitando la gestión y escalabilidad de los servicios 
-necesarios para operar un sistema Hadoop completo.
-
 ```
 version: "3"
 
@@ -246,16 +237,9 @@ hadoop_datanode: Persistencia de datos del DataNode.
 - Volúmenes:
 hadoop_historyserver: Persistencia de datos del HistoryServer.
 
-Volúmenes
-
-hadoop_namenode: Almacena los datos del NameNode.
-hadoop_datasets: Almacena los datasets de Hadoop.
-hadoop_datanode: Almacena los datos del DataNode.
-hadoop_historyserver: Almacena los datos del HistoryServer.
-
 ### Acceso a las Interfaces Web
 NameNode Web UI: http://localhost:9870
 DataNode Web UI: http://localhost:9864
 
 ### Conclusión
-Este archivo docker-compose-v1.yml facilita el despliegue de un clúster de Hadoop utilizando Docker Compose. Siguiendo esta guía, podrás configurar y ejecutar tu propio clúster de Hadoop de manera eficiente.
+Este archivo docker-compose-v1.yml facilita el despliegue de un clúster de Hadoop utilizando Docker Compose. Podrás configurar y ejecutar tu propio clúster de Hadoop de manera eficiente.
