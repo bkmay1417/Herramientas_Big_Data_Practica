@@ -4,6 +4,21 @@
 
 Esta guía te ayudará a crear un archivo docker-compose-v1.yml para desplegar un clúster de Hadoop usando Docker Compose. Además, se incluye una explicación detallada de cada componente y cómo funciona.
 
+
+## Diagrama de Flujo del Proceso
+
+```mermaid
+graph TD;
+    A[Iniciar] --> B[Instalar Docker y Docker Compose]
+    B --> C[Crear docker-compose-v1.yml]
+    C --> D[Definir servicios: NameNode, DataNode, ResourceManager, NodeManager, HistoryServer]
+    D --> E[Crear hadoop.env con variables de entorno]
+    E --> F[Ejecutar docker-compose up]
+    F --> G[Verificar servicios en ejecución]
+    G --> H[Acceso a interfaces web]
+    H --> I[Uso del clúster de Hadoop]
+```
+
 ### Prerrequisitos
 Antes de comenzar, asegúrate de tener instalados los siguientes programas en tu sistema:
 
