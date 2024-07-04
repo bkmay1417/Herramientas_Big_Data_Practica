@@ -34,7 +34,7 @@ En este proyecto se llevó a cabo en un entorno de desarrollo Windows. Se utiliz
 
 <p><img src="./img/Virtualbox0.1.png" alt="virtualbox0.1" width="75%" /></p>
 
-- **Paso 0.03:**  Creamos una nueva maquina virtual
+- **Paso 0.03:**  Creamos una nueva maquina virtual.
 
 <p><img src="./img/Virtualbox0.png" alt="virtualbox0" width="75%" /></p>
 
