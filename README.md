@@ -38,7 +38,7 @@ En este proyecto se llevó a cabo en un entorno de desarrollo Windows. Se utiliz
 
 <p><img src="./img/Virtualbox0.png" alt="virtualbox0" width="75%" /></p>
 
-- **Paso 0.04:**  La llamamos ubuntu
+- **Paso 0.04:**  La llamamos ubuntu.
 
 <p><img src="./img/Virtualbox1.png" alt="virtualbox1"    /></p>
 
