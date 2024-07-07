@@ -42,7 +42,7 @@ En este proyecto se llevó a cabo en un entorno de desarrollo Windows. Se utiliz
 
 <p><img src="./img/Virtualbox1.png" alt="virtualbox1"    /></p>
 
-- **Paso 0.05:**  Nos dirigimos a hard disk y ponemos utilizar un hard disk existente
+- **Paso 0.05:**  Nos dirigimos a hard disk y ponemos utilizar un hard disk existente.
 
 <p><img src="./img/Virtualbox2.png" alt="virtualbox2"   /></p>
 
