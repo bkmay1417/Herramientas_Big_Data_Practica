@@ -46,7 +46,7 @@ En este proyecto se llevó a cabo en un entorno de desarrollo Windows. Se utiliz
 
 <p><img src="./img/Virtualbox2.png" alt="virtualbox2"   /></p>
 
-- **Paso 0.06:**  Elegimos el hardisk anteriormente descargado y finalizar
+- **Paso 0.06:**  Elegimos el hardisk anteriormente descargado y finalizar.
 
 <p><img src="./img/Virtualbox3.png" alt="virtualbox3" width="75%"  /></p>
 
