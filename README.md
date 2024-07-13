@@ -50,7 +50,7 @@ En este proyecto se llevó a cabo en un entorno de desarrollo Windows. Se utiliz
 
 <p><img src="./img/Virtualbox3.png" alt="virtualbox3" width="75%"  /></p>
 
-- **Paso 0.07:**  Luego configuramos los puestos de red
+- **Paso 0.07:**  Luego configuramos los puestos de red.
 
 <p><img src="./img/Virtualbox4.png" alt="virtualbox4" /></p>
 
