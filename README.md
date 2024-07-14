@@ -54,7 +54,7 @@ En este proyecto se llevó a cabo en un entorno de desarrollo Windows. Se utiliz
 
 <p><img src="./img/Virtualbox4.png" alt="virtualbox4" /></p>
 
-- **Paso 0.08:**  En el primer adaptador pones adaptador puente y en avanzado permitir todo
+- **Paso 0.08:**  En el primer adaptador pones adaptador puente y en avanzado permitir todo.
 
 <p><img src="./img/Virtualbox5.png" alt="virtualbox5"   /></p>
 
