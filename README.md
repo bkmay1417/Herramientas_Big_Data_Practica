@@ -74,7 +74,7 @@ En este proyecto se llevó a cabo en un entorno de desarrollo Windows. Se utiliz
 
 <p><img src="./img/Virtualbox7.png" alt="virtualbox7" width="75%"  /></p>
 
-- **Paso 0.12:**  A continuacion obtenemos el ip de la maquina virtual
+- **Paso 0.12:**  A continuacion obtenemos el ip de la maquina virtual.
 
 ```
 hostname -I
