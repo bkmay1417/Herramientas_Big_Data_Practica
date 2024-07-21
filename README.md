@@ -58,7 +58,7 @@ En este proyecto se llevó a cabo en un entorno de desarrollo Windows. Se utiliz
 
 <p><img src="./img/Virtualbox5.png" alt="virtualbox5"   /></p>
 
-- **Paso 0.09:**  En el segundo colocamos solo anfitrion y en avanzado permitir todo y guardamos 
+- **Paso 0.09:**  En el segundo colocamos solo anfitrion y en avanzado permitir todo y guardamos. 
 
 <p><img src="./img/Virtualbox6.png" alt="virtualbox6" height="63%" width="63%"  /></p>
 
