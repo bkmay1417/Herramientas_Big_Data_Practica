@@ -62,7 +62,7 @@ En este proyecto se llevó a cabo en un entorno de desarrollo Windows. Se utiliz
 
 <p><img src="./img/Virtualbox6.png" alt="virtualbox6" height="63%" width="63%"  /></p>
 
-- **Paso 0.10:**  Iniciamos la maquina virtual 
+- **Paso 0.10:**  Iniciamos la maquina virtual. 
 
 > [!CAUTION]
 > Este paso fallara si se tiene la virtualizacion de windows desactivada .
