@@ -145,7 +145,7 @@ git clone https://github.com/bkmay1417/Herramientas_Big_Data_Practica.git
 
 <p><img src="./img/HDFS.png" alt="HDFS" width="75%"  /></p>
 
-- **Paso 0.19:**  Primero clonamos el repositorio que contiene lo nesesario para trabajar
+- **Paso 0.19:**  Primero clonamos el repositorio que contiene lo nesesario para trabajar.
 ```
 cd Herramientas_Big_Data_Practica
 ```
