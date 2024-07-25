@@ -149,7 +149,7 @@ git clone https://github.com/bkmay1417/Herramientas_Big_Data_Practica.git
 ```
 cd Herramientas_Big_Data_Practica
 ```
-- **Paso 0.20:** ingresamos en el directorio 
+- **Paso 0.20:** ingresamos en el directorio. 
 ```
 sudo docker-compose -f docker-compose-v1.yml up -d
 ```
