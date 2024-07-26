@@ -86,7 +86,7 @@ hostname -I
 
 <p><img src="./img/putty.png" alt="putty0"  width="75%" /></p>
 
-- **Paso 0.14:**  Iniciamos el putty con la ip usuario y comtraseña de la maquina virtual
+- **Paso 0.14:**  Iniciamos el putty con la ip usuario y comtraseña de la maquina virtual.
 
 <p><img src="./img/putyy1.png" alt="putty1"   /></p>
 
