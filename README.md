@@ -90,7 +90,7 @@ hostname -I
 
 <p><img src="./img/putyy1.png" alt="putty1"   /></p>
 
-- **Paso 0.15:**  Despues ingresamos el usuario y contraseña
+- **Paso 0.15:**  Despues ingresamos el usuario y contraseña.
 
 <p><img src="./img/putty2.png" alt="putty2" height="63%" width="63%" /></p>
 
